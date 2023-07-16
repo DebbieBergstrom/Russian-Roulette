@@ -18,17 +18,15 @@ Welcome to
 
 ## **CONTENT**
 
-## Table of Content
-
-&nbsp;
-
-- [User Story](#user-story)
-- [How to Use Travel Guide](#how-to-use-travel-guide)
+- [User Stories](#user-stories)
+- [How to use Russian Roulette Game](#how-to-use-russian-roulette-game)
 - [Program Flow](#program-flow)
 - [Data Model](#data-model)
 - [Technologies Used](#technologies-used)
 - [Features](#features)
+- [Validation](#validation)
 - [Testing](#testing)
+- [Bugs](#bugs)
 - [Deployment](#deployment)
 - [Credits](#credits)
 
@@ -36,11 +34,7 @@ Welcome to
 
 ---
 
-## **USER EXPERIENCE**
-
-
-&nbsp;
-### **USER STORIES**
+## **User Stories**
 #### **First time users**
 1. _As a first-time user, I want to 
 2. _As a first-time user, I want to 
@@ -48,41 +42,42 @@ Welcome to
 4. _As a first-time user, I want to 
 5. _As a first-time user, I want to 
 6. _As a first-time user, 
+
 #### **Returning users**
+7. _As a returning user, I want to
 8. _As a returning user, I want to
-9. _As a returning user, I want to
 10. _As a returning user, I want to
 11. _As a returning user, I want to 
 
-#### **Site owner**
-14. _As the site owner, I want users to 
-15. _As the site owner, I want users to 
-16. _As the site owner, I want users to 
-17. _As the site owner, I want users to 
-
 &nbsp;
 
+---
 ## **How to use Russian Roulette Game**
 ...........
 
---- 
 
+&nbsp;
+
+---
 ## **Program flow**
 
 
 ![flowchart](filepath)
 
---- 
+&nbsp;
 
+---
 ## **Data model**
 The app did not use a data model at this stage of development.
 
---- 
 
+&nbsp;
+
+---
 ## **Technologies used**
 ### **Language**
 - <b>Python 3</b>: primary programming language for the project
-- <b>Html</b>, <b>css</b> and <b>javascript</b> is also used but only manipulated for better UI experience for user.
+
 
 ### **Programs used**
 - [LucidChart](https://lucidchart/) to visually map out the structure and flowchart of the app.
@@ -92,8 +87,10 @@ The app did not use a data model at this stage of development.
 - [Heroku](https://www.heroku.com/home) cloud platform used for deploying and hosting the project's web application
 - [Pseudoeditor](https://pseudoeditor.com/app/) For making a structured plan of pseudocode before actual coding.
 
---- 
 
+&nbsp;
+
+---
 ## **Features**
 ### **Existing features**
 The <b>Russian Roulette Game</b> application currently offers the following features:
@@ -108,8 +105,9 @@ Expanded features Options: Provide more storylines or story options to allow use
 - <b>Improved Validation and Error Handling:</b> Refine the validation and error handling mechanisms to provide more informative and user-friendly error messages in case of incorrect inputs or invalid data.
 - <b>Save data:</b> for example to store scores
 
---- 
+&nbsp;
 
+---
 ## **Validation**
 All string validations have the <b>`.capitalize()`</b> or <b>`.upper()`</b> function to prevent any big or small letter errors.
 
@@ -119,22 +117,21 @@ All string validations have the <b>`.capitalize()`</b> or <b>`.upper()`</b> func
     `if` "N" `not in` "variable" `and` "Y" `not in` "variable":
     `print('Please press either "Y" for YES or "N" for NO')`
 
+&nbsp;
 
 ---
-
 ## **Testing**
 
-### Testing User Stories
+### **Testing User Stories**
 
 **First Time Visitors**
-
 | User Story | How this was achieved | Screenshot |
 |------------|-----------------------|------------|
 | As a first-time visitor, I want to | The application displays a  | <details><summary>Screenshot of result:</summary>![Result](docs/testing)</details> |
 
+&nbsp;
 
 **Returning Visitors**
-
 | User Story | How this was achieved | Screenshot |
 |------------|-----------------------|------------|
 | As a returning visitor, I want to  | Returning visitors can | <details><summary>Screenshot of result:</summary>![Result](docs/testing/)</details> |
@@ -168,21 +165,25 @@ Family and friends tested my game on their devices no issues were reported.
 Validation of integer inputs for "Y" and "N" questions	| test input of both lower- and uppercase	| both should work as inputs | Works as expected
 
 
----
+&nbsp;
 
+---
 ## **Bugs**
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
-| 1. Bug to be listed| Solutions to be fixed ||                                                                                                                                                          
+| 1. Bug to be listed| FIxed by|                                                                                                                                                          
 
 &nbsp;
 ### **Known Bugs**
+| **Bug** | **Possible solution** |
+| ----------- | ----------- |
+| 1. Bug to be listed| Solutions to be fixed ||   
 
 
+&nbsp;
 
---- 
-
+---
 ## **Deployment**
 To deploy this project, these steps was followed:
 
@@ -194,16 +195,16 @@ To deploy this project, these steps was followed:
 
 After following these steps, the app wassuccessfully deployed to Heroku. 
 
----
+&nbsp;
 
+---
 ## **Credits**
 
 ### Here's a collection of sites that were helpful in creating this website:
-&nbsp;
 
 - [WC3Shools](https://www.????) explanation tbc
 
-Create some of the text content: Worked together with [ChatGPT](https://openai.com/)
+To create some of the text content: Worked together with [ChatGPT](https://openai.com/)
 
 ---
 
@@ -216,6 +217,3 @@ I'd like to give recognition to the individuals who supported me in finishing th
 * [MENTOR NAME](https://github.com/??????????), my Code Institute Mentor.....tbc
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
---- 
-&nbsp;
