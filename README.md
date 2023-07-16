@@ -62,7 +62,7 @@ Welcome to
 ## **Program flow**
 
 
-![flowchart](filepath)
+![flowchart](/docs/screenshots/lucid_chart_PP3_russian_roulette.png)
 
 &nbsp;
 
@@ -175,7 +175,7 @@ Validation of integer inputs for "Y" and "N" questions	| test input of both lowe
 | 1. Bug to be listed| FIxed by|                                                                                                                                                          
 
 &nbsp;
-### **Known Bugs**
+### **Unfixed Bugs**
 | **Bug** | **Possible solution** |
 | ----------- | ----------- |
 | 1. Bug to be listed| Solutions to be fixed ||   
