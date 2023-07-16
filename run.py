@@ -1,9 +1,11 @@
-import random 
+import random
 
-def random_chamber():
+def survives_spin():
     """
     Randomizes a number from 1 to 6 which represents the 
     6 chambers in the cylinder of the revolover and one
-    contains a bullet.
+    contains a bullet. 5 out of 6 chance to survive = True
     """
-    return random.randint(1, 6) != 3    #sets the third out of six chambers as the one with a bullet inside
+    return random.randint(1, 6) != 1    #sets the first out of six chambers with the bullet = False
+
+print(survives_spin())
