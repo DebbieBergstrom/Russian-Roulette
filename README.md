@@ -203,6 +203,7 @@ After following these steps, the app wassuccessfully deployed to Heroku.
 ### Here's a collection of sites that were helpful in creating this website:
 
 - [WC3Shools](https://www.????) explanation tbc
+- [Youtube](https://www.youtube.com/watch?v=jSv0coMSQgg) tutorial for simple russian roulette game
 
 To create some of the text content: Worked together with [ChatGPT](https://openai.com/)
 
