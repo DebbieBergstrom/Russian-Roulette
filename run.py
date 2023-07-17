@@ -50,4 +50,12 @@ def game():
             elif play_now == "n":
                 break
 
+        # If the user choose 'Victim'
+        if character_choice == "v":
+            print("""Caught in the cruel grips of a notorious assassin for a debt you could never pay off, you are given a chilling choice: your life or a game. A game so simple, yet so deadly it's been feared for centuries - Russian Roulette. In the eerie silence of the room, your heart pounds as you reach for the gun. This might be your only chance to reclaim your freedom, or it might be your end. The answer lies in the hands of fate.
+            It's time to put the bullet in one of the chambers and spin the cylinder.""")
+
+            input("Press (s) to spin\n")
+
+
 print(game())

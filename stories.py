@@ -26,7 +26,7 @@ Yes press(Y), No press(N)\n""")
 # Story displayed when user choose to be the 'Victim'
 v_story = """Caught in the cruel grips of a notorious assassin for a debt you could never pay off, you are given a chilling choice: your life or a game. A game so simple, yet so deadly it's been feared for centuries - Russian Roulette. In the eerie silence of the room, your heart pounds as you reach for the gun. This might be your only chance to reclaim your freedom, or it might be your end. The answer lies in the hands of fate."
 It's time to put the bullet in one of the chambers and spin the cylinder.
-Press (s) to spin"""
+Press (s) to spin\n"""
 
 v_story_spin = """Cylinder is spun... Your life flashes before your eyes and you question yourself and how you ended up here. Well, you don't have any choices but to do as you're told..."""
 
