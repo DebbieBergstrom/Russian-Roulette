@@ -207,6 +207,7 @@ After following these steps, the app wassuccessfully deployed to Heroku.
 
 - [Youtube](https://www.youtube.com/watch?v=jSv0coMSQgg) first tutorial russian roulette game
 - [Youtube](https://www.youtube.com/watch?v=lJivq450kqQ) second tutorial russian roulette game
+- [Youtube](https://www.youtube.com/watch?v=lqAQN0T_Ues&t=580s) third tutorial russian roulette game
 
 - [ASCII Art](https://https://www.asciiart.eu/weapons/guns) for pre-made ASCII weapon art
 
