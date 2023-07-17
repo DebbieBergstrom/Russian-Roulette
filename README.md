@@ -202,10 +202,15 @@ After following these steps, the app wassuccessfully deployed to Heroku.
 
 ### Here's a collection of sites that were helpful in creating this website:
 
-- [WC3Shools](https://www.????) explanation tbc
-- [Youtube](https://www.youtube.com/watch?v=jSv0coMSQgg) tutorial for simple russian roulette game
+- [WC3Shools](https://www.w3schools.com/python/ref_func_input.asp) explainint input function
+- [WC3Shools](https://www.w3schools.com/python/python_while_loops.asp) explainint while loops
 
-To create some of the text content: Worked together with [ChatGPT](https://openai.com/)
+- [Youtube](https://www.youtube.com/watch?v=jSv0coMSQgg) first tutorial russian roulette game
+- [Youtube](https://www.youtube.com/watch?v=lJivq450kqQ) second tutorial russian roulette game
+
+- [ASCII Art](https://https://www.asciiart.eu/weapons/guns) for pre-made ASCII weapon art
+
+- [ChatGPT](https://openai.com/) To create some of the story content
 
 ---
 
