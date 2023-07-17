@@ -1,8 +1,6 @@
 import random
-import stories
 
 ######## GAME FUNCTIONS ########
-
 
 def randomize_spin():
     """
@@ -16,7 +14,8 @@ print(randomize_spin())
 
 
 def game():
-    print(stories.welcome)
+    
+
 
 print(game())
 
