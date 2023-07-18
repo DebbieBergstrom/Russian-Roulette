@@ -51,11 +51,18 @@ def game():
                 break
 
         # If the user choose 'Victim'
-        if character_choice == "v":
-            print("""Caught in the cruel grips of a notorious assassin for a debt you could never pay off, you are given a chilling choice: your life or a game. A game so simple, yet so deadly it's been feared for centuries - Russian Roulette. In the eerie silence of the room, your heart pounds as you reach for the gun. This might be your only chance to reclaim your freedom, or it might be your end. The answer lies in the hands of fate.
-            It's time to put the bullet in one of the chambers and spin the cylinder.""")
+        if character_choice in ["v", "a"]:
+            story = (
+                """Caught in the cruel grips of a notorious assassin for a debt you could never pay off, you are given a chilling choice: your life or a game. A game so simple, yet so deadly it's been feared for centuries - Russian Roulette. In the eerie silence of the room, your heart pounds as you reach for the gun. This might be your only chance to reclaim your freedom, or it might be your end. The answer lies in the hands of fate."
+                It's time to put the bullet in one of the chambers and spin the cylinder..."""
+                if user_choice == 'v'
+                else """You're known not just as an assassin, but as an arbiter of divine justice. Your method? Russian Roulette. In this fatal game, you believe it's not you, but the hand of God who pulls the trigger. Your victims are not just targets, they are sinners - a single name, a single debt, a single chance at redemption. 
+                It's time to put the bullet in one of the chambers and spin the cylinder..."""
+            )
+            print(story)
 
             input("Press (s) to spin\n")
+            input("""Cylinder is spun... Your life flashes before your eyes and you question yourself and how you ended up here. Well, you don't have any choices but to do as you're told...""")
 
 
 print(game())
