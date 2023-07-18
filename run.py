@@ -77,10 +77,10 @@ def game():
             if character_choice == 'v':
                 message = (
                     """You survived! Did you have an angel watching out for you? Freedom is at your feet..."""
-                    if survival_result 
+                    if survival_result
                     else """You're dead! If you don't see the bright light you're supposed to walk towards, it might get very hot soon, sinner! Too late to be sorry..."""
                 )
-            else: 
+            else:
                 message = (
                     """Victim survived! God must have a greter plan! Let's find another sinner and test his faith."""
                     if survival_result
@@ -88,9 +88,16 @@ def game():
                 )
 
             print(message)
-        
 
-            
+            # Takes user back to start of the game
+            play_again = input("""Play again?
+            Yes press(Y), No press(N)\n""")
+
+            if play_again == "y":
+                continue
+
+            elif play_again == "n":
+                break
 
 
 print(game())
