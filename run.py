@@ -72,11 +72,22 @@ def game():
 
             pull_trigger = input("Pull the trigger! Press (enter)\n")
 
-            survival_result = randomize_spin():
+            survival_result = randomize_spin()
 
-            if character_choice == 'v'
-                message = "You survived! Did you have an angel watching out for you? Freedom is at your feet..."
+            if character_choice == 'v':
+                message = (
+                    """You survived! Did you have an angel watching out for you? Freedom is at your feet..."""
+                    if survival_result 
+                    else """You're dead! If you don't see the bright light you're supposed to walk towards, it might get very hot soon, sinner! Too late to be sorry..."""
+                )
+            else: 
+                message = (
+                    """Victim survived! God must have a greter plan! Let's find another sinner and test his faith."""
+                    if survival_result
+                    else """Victim's dead! With a clear concience you just sent the poor victim's soul to the eternal flames in purgatory. Let's find another sinner and test their faith."""
+                )
 
+            print(message)
         
 
             
