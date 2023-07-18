@@ -1,7 +1,7 @@
 import random
+import sys
 
 ######## GAME FUNCTIONS ########
-
 
 def randomize_spin():
     """
@@ -10,10 +10,6 @@ def randomize_spin():
     contains a bullet. 2-6 = survive = True
     """
     return random.randint(1, 6) != 1  # sets the first out of six chambers with the bullet
-
-
-print(randomize_spin())
-
 
 def game():
     """
@@ -25,7 +21,7 @@ def game():
     while True:
         character_choice = input("""Are you the victim or the assassin?
         Victim press(V) - Assassin press(A)
-        See the Rules press(R)\n""")
+        See the Rules press(R)\n""").lower()
 
         # Takes user back to start of the game
         if character_choice == "r":
@@ -42,7 +38,7 @@ def game():
 
             # Takes user back to start of the game or ends game
             play_now = input("""Play now?
-            Yes press(Y), No press(N)\n""")
+            Yes press(Y), No press(N)\n""").lower()
 
             if play_now == "y":
                 continue
@@ -61,7 +57,7 @@ def game():
             )
             print(story)
 
-            input("Press (s) to spin\n")
+            input("Press (s) to spin\n").lower()
 
             story_spin = (
                 """Cylinder is spun... Your life flashes before your eyes and you question yourself and how you ended up here. Well, you don't have any choices but to do as you're told..."""
@@ -70,7 +66,7 @@ def game():
             )
             print(story_spin)
 
-            pull_trigger = input("Pull the trigger! Press (enter)\n")
+            pull_trigger = input("Pull the trigger! Press (enter)\n").lower()
 
             survival_result = randomize_spin()
 
@@ -91,7 +87,7 @@ def game():
 
             # Takes user back to start of the game
             play_again = input("""Play again?
-            Yes press(Y), No press(N)\n""")
+            Yes press(Y), No press(N)\n""").lower()
 
             if play_again == "y":
                 continue
