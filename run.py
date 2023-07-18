@@ -46,11 +46,11 @@ def game():
             - If the gun fires -victim dies, the assassin has carried out divine judgement.
             - If the gun doesn't fire -victim survives, the assassin walks away.
 
-            May fate be in your favor.""")
+            May fate be in your favor.\n""")
 
             # Takes user back to start of the game or ends game
             play_now = slow_input("""Play now?
-            Yes press(Y), No press(N)\n""").lower()
+            Yes press(Y), No press(N)\n""")
 
 
             if play_now == "y":
@@ -63,24 +63,22 @@ def game():
         # If the user choose 'Victim'
         if character_choice in ["v", "a"]:
             story = (
-                """Caught in the cruel grips of a notorious assassin for a debt you could never pay off, you are given a chilling choice: your life or a game. A game so simple, yet so deadly it's been feared for centuries - Russian Roulette. In the eerie silence of the room, your heart pounds as you reach for the gun. This might be your only chance to reclaim your freedom, or it might be your end. The answer lies in the hands of fate."
-                It's time to put the bullet in one of the chambers and spin the cylinder..."""
+                """Caught in the cruel grips of a notorious assassin for a debt you could never pay off, you are given a chilling choice: your life or a game. A game so simple, yet so deadly it's been feared for centuries - Russian Roulette. In the eerie silence of the room, your heart pounds as you reach for the gun. This might be your only chance to reclaim your freedom, or it might be your end. The answer lies in the hands of fate.\n It's time to put the bullet in one of the chambers and spin the cylinder...\n"""
                 if character_choice == 'v'
-                else """You're known not just as an assassin, but as an arbiter of divine justice. Your method? Russian Roulette. In this fatal game, you believe it's not you, but the hand of God who pulls the trigger. Your victims are not just targets, they are sinners - a single name, a single debt, a single chance at redemption. 
-                It's time to put the bullet in one of the chambers and spin the cylinder..."""
+                else """You're known not just as an assassin, but as an arbiter of divine justice. Your method? Russian Roulette. In this fatal game, you believe it's not you, but the hand of God who pulls the trigger. Your victims are not just targets, they are sinners - a single name, a single debt, a single chance at redemption.\n It's time to put the bullet in one of the chambers and spin the cylinder...\n"""
             )
             slow_print(story)
 
-            slow_input("Press (s) to spin\n").lower()
+            slow_input("Press (s) to spin\n")
 
             story_spin = (
                 """Cylinder is spun... Your life flashes before your eyes and you question yourself and how you ended up here. Well, you don't have any choices but to do as you're told..."""
                 if character_choice == 'v'
-                else """Cylinder is spun... As you place the revolver on the table, you feel the familiar rush of adrenaline. Is this another soul destined for salvation or damnation? The answer lies in the hands of fate."""
+                else """Cylinder is spun... As you place the revolver on the table, you feel the familiar rush of adrenaline. Is this another soul destined for salvation or damnation? The answer lies in the hands of fate.\n"""
             )
             slow_print(story_spin)
 
-            pull_trigger = slow_input("Pull the trigger! Press (enter)\n").lower()
+            pull_trigger = slow_input("Pull the trigger! Press (enter)\n")
 
             survival_result = randomize_spin()
 
@@ -101,7 +99,7 @@ def game():
 
             # Takes user back to start of the game
             play_again = slow_input("""Play again?
-            Yes press(Y), No press(N)\n""").lower()
+            Yes press(Y), No press(N)\n""")
 
             if play_again == "y":
                 os.system('clear')      
