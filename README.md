@@ -202,8 +202,9 @@ After following these steps, the app wassuccessfully deployed to Heroku.
 
 ### Here's a collection of sites that were helpful in creating this website:
 
-- [WC3Shools](https://www.w3schools.com/python/ref_func_input.asp) explainint input function
-- [WC3Shools](https://www.w3schools.com/python/python_while_loops.asp) explainint while loops
+- [WC3Shools](https://www.w3schools.com/python/ref_func_input.asp) explaining input function
+- [WC3Shools](https://www.w3schools.com/python/python_while_loops.asp) explaining while loops
+- [GeeksforGeeks](https://www.geeksforgeeks.org/clear-screen-python/) explaining clear screen and sleep import
 
 - [Youtube](https://www.youtube.com/watch?v=jSv0coMSQgg) first tutorial russian roulette game
 - [Youtube](https://www.youtube.com/watch?v=lJivq450kqQ) second tutorial russian roulette game
