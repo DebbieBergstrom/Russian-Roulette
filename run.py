@@ -55,7 +55,7 @@ def game():
             story = (
                 """Caught in the cruel grips of a notorious assassin for a debt you could never pay off, you are given a chilling choice: your life or a game. A game so simple, yet so deadly it's been feared for centuries - Russian Roulette. In the eerie silence of the room, your heart pounds as you reach for the gun. This might be your only chance to reclaim your freedom, or it might be your end. The answer lies in the hands of fate."
                 It's time to put the bullet in one of the chambers and spin the cylinder..."""
-                if user_choice == 'v'
+                if character_choice == 'v'
                 else """You're known not just as an assassin, but as an arbiter of divine justice. Your method? Russian Roulette. In this fatal game, you believe it's not you, but the hand of God who pulls the trigger. Your victims are not just targets, they are sinners - a single name, a single debt, a single chance at redemption. 
                 It's time to put the bullet in one of the chambers and spin the cylinder..."""
             )
@@ -65,10 +65,19 @@ def game():
 
             story_spin = (
                 """Cylinder is spun... Your life flashes before your eyes and you question yourself and how you ended up here. Well, you don't have any choices but to do as you're told..."""
-                if user_choice == 'v'
+                if character_choice == 'v'
                 else """Cylinder is spun... As you place the revolver on the table, you feel the familiar rush of adrenaline. Is this another soul destined for salvation or damnation? The answer lies in the hands of fate."""
             )
             print(story_spin)
+
+            pull_trigger = input("Pull the trigger! Press (enter)\n")
+
+            survival_result = randomize_spin():
+
+            if character_choice == 'v'
+                message = "You survived! Did you have an angel watching out for you? Freedom is at your feet..."
+
+        
 
             
 
