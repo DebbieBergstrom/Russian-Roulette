@@ -23,6 +23,14 @@ def slow_input(string, delay=0.02):
     slow_print(string, delay)
     return input().lower()
 
+def validate_input(promt, valid_inputs, error_message):
+    while True:
+        user_input = slow_input(promt)
+        if user_input in valid_inputs:
+            return user_input
+        else:
+            slow_print(error_message)
+
 def game():
     """
     Introduction message gets displayed for the user
@@ -31,9 +39,14 @@ def game():
 
     # main game loop
     while True:
-        character_choice = slow_input("""Are you the victim or the assassin?
-        Victim press(V) - Assassin press(A)
-        See the Rules press(R)\n""")
+        character_choice = validate_input(
+            """Are you the victim or the assassin?
+            Victim press(V) - Assassin press(A)
+            See the Rules press(R)\n""",
+            ['v', 'a', 'r'],
+            "Only the provided options are valid. Choose one of them"
+    )
+
 
         # Takes user back to start of the game
         if character_choice == "r":
@@ -44,7 +57,7 @@ def game():
             - The cylinder is spun, randomizing the position of the bullet.
             - The victim is forced to pull the trigger. 
             - If the gun fires -victim dies, the assassin has carried out divine judgement.
-            - If the gun doesn't fire -victim survives, the assassin walks away.
+            - If the gun doesn't fire -victim survives, the assassin walks away.\n
 
             May fate be in your favor.\n""")
 
