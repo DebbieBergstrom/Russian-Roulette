@@ -62,7 +62,15 @@ def game():
             print(story)
 
             input("Press (s) to spin\n")
-            input("""Cylinder is spun... Your life flashes before your eyes and you question yourself and how you ended up here. Well, you don't have any choices but to do as you're told...""")
+
+            story_spin = (
+                """Cylinder is spun... Your life flashes before your eyes and you question yourself and how you ended up here. Well, you don't have any choices but to do as you're told..."""
+                if user_choice == 'v'
+                else """Cylinder is spun... As you place the revolver on the table, you feel the familiar rush of adrenaline. Is this another soul destined for salvation or damnation? The answer lies in the hands of fate."""
+            )
+            print(story_spin)
+
+            
 
 
 print(game())
