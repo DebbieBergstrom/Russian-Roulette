@@ -172,7 +172,7 @@ Validation of integer inputs for "Y" and "N" questions	| test input of both lowe
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
-| 1. Bug to be listed| Fixed by|                                                                                                                                                          
+| 1. The first line of the multiline string is not aligned with the rest that gets indented| Fixed by|                                                                                                                                                          
 
 &nbsp;
 ### **Unfixed Bugs**
