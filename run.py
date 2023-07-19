@@ -60,7 +60,7 @@ def game():
             "Only the provided options are valid. Choose one of them.\n"
         )
 
-        # Takes user back to start of the game
+        # Takes user to see the rules
         if character_choice == "r":
             slow_print("""Russian Roulette is a deadly game of chance.
             Here's how it works:
@@ -75,7 +75,7 @@ def game():
 
             May fate be in your favor.\n""")
 
-            # Takes user back to start of the game or ends game
+            # Takes user back to start of the game
             play_now = validate_input(
                 """Play now?
                 Yes press(Y), No press(N)\n""",
@@ -88,7 +88,9 @@ def game():
                 continue
 
             elif play_now == "n":
-                break
+                slow_print("Welcome back! Game ends...")
+                time.sleep(2)
+                quit()
 
         # If the user choose 'Victim'
         if character_choice in ["v", "a"]:
@@ -167,7 +169,7 @@ def game():
                 continue
 
             elif play_again == "n":
-                slow_print("Thank you for playing! Welcome back!")
+                slow_print("Thank you for playing! Welcome back! Game ends...")
                 time.sleep(2)
                 quit()
 
