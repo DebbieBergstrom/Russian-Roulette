@@ -172,7 +172,7 @@ Validation of integer inputs for "Y" and "N" questions	| test input of both lowe
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
-| 1. Bug to be listed| FIxed by|                                                                                                                                                          
+| 1. Bug to be listed| Fixed by|                                                                                                                                                          
 
 &nbsp;
 ### **Unfixed Bugs**
@@ -193,7 +193,7 @@ To deploy this project, these steps was followed:
 4. Connect your Heroku app to the repository by linking it to your forked copy of the repository.
 5. Click on the "Deploy" button in the Heroku dashboard.
 
-After following these steps, the app wassuccessfully deployed to Heroku. 
+After following these steps, the app was successfully deployed to Heroku. 
 
 &nbsp;
 
@@ -205,6 +205,7 @@ After following these steps, the app wassuccessfully deployed to Heroku.
 - [WC3Shools](https://www.w3schools.com/python/ref_func_input.asp) explaining input function
 - [WC3Shools](https://www.w3schools.com/python/python_while_loops.asp) explaining while loops
 - [GeeksforGeeks](https://www.geeksforgeeks.org/clear-screen-python/) explaining clear screen and sleep import
+- [GeeksforGeeks](https://replit.com/talk/learn/The-Slow-Print/44741) explaining delayed printing
 
 - [Youtube](https://www.youtube.com/watch?v=jSv0coMSQgg) first tutorial russian roulette game
 - [Youtube](https://www.youtube.com/watch?v=lJivq450kqQ) second tutorial russian roulette game
