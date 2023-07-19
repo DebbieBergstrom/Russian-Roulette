@@ -172,8 +172,9 @@ Validation of integer inputs for "Y" and "N" questions	| test input of both lowe
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
-| 1. The first line of the multiline string is not aligned with the rest that gets indented| TO BE FIXED|
-| 1. Validation and error message didn't work on the play_now/play_again inputs| Fixed by using the correct validate_input function|                                                                                                                                                              
+| 1. The first line of the multiline string is not aligned with the rest that gets indented.| TO BE FIXED|
+| 2. Validation and error message didn't work on the play_now/play_again inputs.| Fixed by using the correct validate_input function|
+| 3. Validation error message kept being displayed even if prompted key 'enter' was pressed.| Fixed by setting en empty string [''] instead of [enter].|                                                                                                                                                                   
 
 &nbsp;
 ### **Unfixed Bugs**
