@@ -38,6 +38,9 @@ def display_rules():
 
 
 def get_character_choice():
+    """
+    Asks player which character they want to play
+    """
     return validate_input(
         "\nAre you the victim or the assassin?" +
         "\n" +
@@ -49,6 +52,9 @@ def get_character_choice():
 
 
 def get_story(character_choice):
+    """
+    Displays the story that's tied to the chosen character.
+    """
     return (
         # Story if the user choose 'Victim'
         ("\nCaught in the cruel grips of a notorious assassin for a debt " +
@@ -74,6 +80,10 @@ def get_story(character_choice):
 
 
 def get_result_message(character_choice, survival_result):
+    """
+    Displays the survival/death message that's tied to 
+    the chosen character.
+    """
     if character_choice == 'v':
         message =(
         # Victims survival message
@@ -88,20 +98,87 @@ def get_result_message(character_choice, survival_result):
         )
     else:
         message = (
-            # Assassins message that victim survived
+            # Assassins message if victim survived
             ("\nVictim survived!\nGod must have a greater plan! Let's find " +
             "\nanother sinner and test his faith.\n")
             if survival_result
-            # Assassins message that victim died
+            # Assassins message if victim died
             else ("\nVictim's dead!\nWith a clear conscience you just sent " +
             "\nthe poor victim's soul to the eternal flames in purgatory.\n" +
             "\nLet's find another sinner and test their faith.\n")
         )
     return message
 
+
 def ask_play_now_or_quit():
     """
-    Ask player if they want to play or quit.
+    Ask player if they want to play now or not.
     If 'yes', clears screen and return True.
-    I 'no', prints end message and quit the game.
+    If 'no', prints end message and quit the game.
     """
+    play_now = validate_input(
+        "\nPlay now?" +
+        "\nYes press(Y), No press(N)\n",
+        ['y', 'n'],
+        "\nOnly the provided options are valid. Choose one of them.\n"
+    )
+
+    # If yes, player is taken back to play again
+    if play_now == "y":
+        os.system('clear')
+        return True
+
+    # If no, player gets notified before the game ends
+    elif play_now == "n":
+        slow_print("\nWelcome back! Game ends...")
+        time.sleep(2)
+        sys.exit()
+
+
+def ask_play_again_or_quit():
+    """
+    Ask player if they want to play again or not.
+    If 'yes', clears screen and return True.
+    If 'no', prints end message and quit the game.
+    """
+    play_again = validate_input(
+        "\nPlay again?" +
+        "\nYes press(Y), No press(N)\n",
+        ['y', 'n'],
+        "\nOnly the provided options are valid. Choose one of them.\n"
+    )
+
+    # If yes, player is taken back to play again
+    if play_now == "y":
+        slow_print("\nAwesome! Let's test your fate again!")
+        time.sleep(2)
+        os.system('clear')
+        return True
+
+    # If no, player gets notified before the game ends
+    elif play_again == "n":
+        slow_print("\nNuff action for today, huh. See you next time! Game ends...")
+        time.sleep(2)
+        sys.exit()
+
+
+def ask_spin_cylinder():
+    """
+    Asks the player to spin the cylinder
+    """
+    validate_input(
+        "\nPress (s) to spin it.\n",
+        ['s'],
+        "Only (s) is valid. There's no turning back...\n"
+    )
+
+def ask_pull_trigger():
+    """
+    Asks the player to pull the trigger
+    """
+    validate_input(
+        "\nPull the trigger! Press (enter)\n",
+        [''],
+        "\nDon't extend the suffering. Press only (enter)\n"
+    )
+
