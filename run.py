@@ -76,8 +76,12 @@ def game():
             May fate be in your favor.\n""")
 
             # Takes user back to start of the game or ends game
-            play_now = slow_input("""Play now?
-            Yes press(Y), No press(N)\n""")
+            play_now = validate_input(
+                """Play now?
+                Yes press(Y), No press(N)\n""",
+                ['y', 'n'],
+                "Only the provided options are valid. Choose one of them.\n"
+            )
 
             if play_now == "y":
                 os.system('clear')
@@ -138,7 +142,7 @@ def game():
                 )
             else:
                 message = (
-                    """Victim survived! God must have a greter plan! Let's find
+                    """Victim survived! God must have a greater plan! Let's find
                     another sinner and test his faith."""
                     if survival_result
                     else """Victim's dead! With a clear concience you just sent
@@ -149,10 +153,16 @@ def game():
             slow_print(message)
 
             # Takes user back to start of the game
-            play_again = slow_input("""Play again?
-            Yes press(Y), No press(N)\n""")
+            play_again = validate_input(
+                """Play again?
+                Yes press(Y), No press(N)\n""",
+                ['y', 'n'],
+                "Only the provided options are valid. Choose one of them.\n"
+            )
 
             if play_again == "y":
+                slow_print("Awesome! Let's test your fate again!")
+                time.sleep(2)
                 os.system('clear')
                 continue
 
