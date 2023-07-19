@@ -5,7 +5,6 @@ import time
 
 # GAME FUNCTIONS #
 
-# function that randomizes if the 'bullet' gets shot or not
 def randomize_spin():
     """
     Randomizes a number from 1 to 6 which
@@ -15,22 +14,29 @@ def randomize_spin():
     return random.randint(1, 6) != 1  # no.1 is the bullet
 
 
-# function that delays string printing for smooth print effect
 def slow_print(string, delay=0.01):
+    """ 
+    Delays string printing for smooth print effect.
+    """
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(delay)
 
 
-# function that delays input prompt printing for smooth print effect
 def slow_input(string, delay=0.02):
+    """
+    Delays input prompt printing for smooth print effect
+    """
     slow_print(string, delay)
     return input().lower()
 
 
-# input function that holds promt, delay printing + error message
 def validate_input(promt, valid_inputs, error_message):
+    """
+    Function that holds promt, delay printing + error message
+    for validation of user inputs.
+    """
     while True:
         user_input = slow_input(promt)
         if user_input in valid_inputs:
@@ -39,10 +45,9 @@ def validate_input(promt, valid_inputs, error_message):
             slow_print(error_message)
 
 
-# Game starts
 def game():
     """
-    Introduction message gets displayed for the user
+    Initial introduction message gets displayed for the user
     """
     slow_print(
         """Welcome to the game, a deadly dance of
@@ -54,9 +59,8 @@ def game():
         meets mortality.\n"""
     )
 
-    # main game loop
+    # Game starts with asking the player to choose character
     while True:
-        # Game starts with asking the player to choose character
         character_choice = validate_input(
             """Are you the victim or the assassin?
             Victim press(V) - Assassin press(A)
@@ -202,4 +206,4 @@ def game():
                 quit()
 
 
-print(game())
+game()
