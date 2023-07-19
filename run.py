@@ -157,7 +157,9 @@ def game():
                 continue
 
             elif play_again == "n":
-                break
+                slow_print("Thank you for playing! Welcome back!")
+                time.sleep(2)
+                quit()
 
 
 print(game())
