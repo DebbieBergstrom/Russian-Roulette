@@ -126,22 +126,22 @@ def get_story(character_choice):
     )           
 
 def get_spin_story(character_choice):
-     """
-    Displays the story that's tied to the spinning of the cylinder depending on chosen character.
+    """
+    Displays the story that's tied to the spinning of the cylinder.
     """
     return (
-    # Victim's story when 'S' is pressed
-    ("\nCylinder is spun... Your life flashes before your eyes and" +
-    "\nyou question yourself and how you ended up here. Well, you" +
-    "\ndon't have any choices but to do as you're told...\n")
-        if character_choice == 'v'
-        # Assassin's story when 'S' is pressed
-        else ("\nCylinder is spun... As you place the revolver on the" +
-        "\ntable, you feel the familiar rush of adrenaline. Is this" +
-        "\nanother soul destined for salvation or damnation? The answer" +
-        "\nlies in the hands of fate...\n")
+        # Victim's story when 'S' is pressed
+        ("\nCylinder is spun... Your life flashes before your eyes and" +
+        "\nyou question yourself and how you ended up here. Well, you" +
+        "\ndon't have any choices but to do as you're told...\n")
+            if character_choice == 'v'
+            # Assassin's story when 'S' is pressed
+            else ("\nCylinder is spun... As you place the revolver on the" +
+            "\ntable, you feel the familiar rush of adrenaline. Is this" +
+            "\nanother soul destined for salvation or damnation? The answer" +
+            "\nlies in the hands of fate...\n")
     )
-    
+
 
 def get_result_message(character_choice, survival_result):
     """
@@ -157,8 +157,8 @@ def get_result_message(character_choice, survival_result):
             # Victims death message
             else (
             "\nYou're dead!\nIf you don't see the bright light " +
-            "\nyou're supposed to walk towards, it might get very hot in purgatory " +
-            "\nsoon, sinner! Too late to be sorry...\n")
+            "\nyou're supposed to walk towards, it might get very hot soon, sinner! " +
+            "\nToo late to be sorry... Purgatory awaits!\n")
         )
     else:
         message = (

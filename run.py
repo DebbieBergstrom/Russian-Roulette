@@ -34,6 +34,8 @@ def main():
             story = get_story(character_choice)
             slow_print(story)
             ask_spin_cylinder()
+            spin_story = get_spin_story(character_choice) 
+            slow_print(spin_story)
             ask_pull_trigger()
             survival_result = randomize_spin()
             message = get_result_message(character_choice, survival_result)
