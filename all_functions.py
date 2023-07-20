@@ -5,13 +5,14 @@ import time
 
 # GAME FUNCTIONS
 
-def randomize_spin():
+def randomize_spin(bullets):
     """
-    Randomizes a number from 1 to 6 which
-    represents the 6 chambers in the cylinder of the revolver and one
-    contains a bullet. 2-6 = survive = True
+    Randomizes a number from 1 to 6 which represents the 6 chambers in the cylinder of the revolver.
+    Depending on the difficulty, 1, 2, or 3 chambers contain a bullet. 
+    If the randomized number is within the bullet range, returns False (indicating that the player is shot)
+    If the randomized number is outside the bullet range, returns True (indicating that the player survived)
     """
-    return random.randint(1, 6) != 1  # no.1 is the bullet
+    return random.randint(1, 6) > bullets 
 
 
 def slow_print(string, delay=0.01):
@@ -98,9 +99,6 @@ def get_character_choice():
     )
 
 
-def 
-
-
 def get_story(character_choice):
     """
     Displays the story that's tied to the chosen character.
@@ -129,7 +127,7 @@ def get_story(character_choice):
     )
 
 
-    def get_difficulty_level_for_victim():
+def get_difficulty_level_for_victim():
     """
     Ask the victim for the difficulty level they want to play on, based on their self-perceived guilt.
     If 'Not so guilty', return 1.
@@ -137,8 +135,8 @@ def get_story(character_choice):
     If 'Pretty guilty', return 3.
     """
     slow_print(
-        "\nAs the truth serum courses through your veins, you're incapable of lying. " +
-        "\nYou're asked about your guilt. Search deep within your conscience. " +
+        "\nYou've been injected with truth serum into your veins and incapable of lying. " +
+        "\nYou're asked about your guilt. Search deep within your conscience... " +
         "\nJust how guilty are you? Choose the appropriate difficulty level for this round of Russian Roulette..." +
         "\n" +
         "\nKind of Not Guilty - Level Easy, has One bullet in the cylinder. Press (1)" +
@@ -155,7 +153,7 @@ def get_story(character_choice):
     return int(guilt_level)
 
 
-    def get_difficulty_level_for_assassin():
+def get_difficulty_level_for_assassin():
     """
     Ask the assassin for the difficulty level they want to play on, based on their perception of the victim's guilt.
     If 'Not so guilty', return 1.
@@ -287,7 +285,7 @@ def ask_spin_cylinder():
     Asks the player to spin the cylinder
     """
     validate_input(
-        "\nPress (s) to spin it.\n",
+        "\nAlright, gun loaded! Now lets press (s) to spin the cylinder...\n",
         ['s'],
         "Only (s) is valid. There's no turning back...\n"
     )

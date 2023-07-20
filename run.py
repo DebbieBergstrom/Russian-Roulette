@@ -35,11 +35,15 @@ def main():
         elif character_choice in ["v", "a"]:
             story = get_story(character_choice)
             slow_print(story)
+            if character_choice == 'v':
+                bullets = get_difficulty_level_for_victim()
+            elif character_choice == 'a':
+                bullets = get_difficulty_level_for_assassin()
             ask_spin_cylinder()
             spin_story = get_spin_story(character_choice) 
             slow_print(spin_story)
             ask_pull_trigger()
-            survival_result = randomize_spin()
+            survival_result = randomize_spin(bullets)
             message = get_result_message(character_choice, survival_result)
             slow_print(message)
             if not ask_play_again_or_quit():
