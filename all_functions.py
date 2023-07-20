@@ -1,3 +1,8 @@
+import random
+import os
+import sys
+import time
+
 # GAME FUNCTIONS
 
 def randomize_spin():
@@ -120,6 +125,23 @@ def get_story(character_choice):
         "\nIt's time to put the bullet in one of the chambers and spin the cylinder...\n")
     )           
 
+def get_spin_story(character_choice):
+     """
+    Displays the story that's tied to the spinning of the cylinder depending on chosen character.
+    """
+    return (
+    # Victim's story when 'S' is pressed
+    ("\nCylinder is spun... Your life flashes before your eyes and" +
+    "\nyou question yourself and how you ended up here. Well, you" +
+    "\ndon't have any choices but to do as you're told...\n")
+        if character_choice == 'v'
+        # Assassin's story when 'S' is pressed
+        else ("\nCylinder is spun... As you place the revolver on the" +
+        "\ntable, you feel the familiar rush of adrenaline. Is this" +
+        "\nanother soul destined for salvation or damnation? The answer" +
+        "\nlies in the hands of fate...\n")
+    )
+    
 
 def get_result_message(character_choice, survival_result):
     """
@@ -191,7 +213,7 @@ def ask_play_again_or_quit():
     )
 
     # If yes, player is taken back to play again
-    if play_now == "y":
+    if play_again == "y":
         slow_print("\nAwesome! Let's test your fate again!")
         time.sleep(2)
         os.system('clear')
