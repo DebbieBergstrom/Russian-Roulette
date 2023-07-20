@@ -1,3 +1,45 @@
+# GAME FUNCTIONS
+
+def randomize_spin():
+    """
+    Randomizes a number from 1 to 6 which
+    represents the 6 chambers in the cylinder of the revolver and one
+    contains a bullet. 2-6 = survive = True
+    """
+    return random.randint(1, 6) != 1  # no.1 is the bullet
+
+
+def slow_print(string, delay=0.01):
+    """ 
+    Delays string printing for smooth print effect.
+    """
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(delay)
+
+
+def slow_input(string, delay=0.02):
+    """
+    Delays input prompt printing for smooth print effect
+    """
+    slow_print(string, delay)
+    return input().lower()
+
+
+def validate_input(promt, valid_inputs, error_message):
+    """
+    Function that holds promt, delay printing + error message
+    for validation of user inputs.
+    """
+    while True:
+        user_input = slow_input(promt)
+        if user_input in valid_inputs:
+            return user_input
+        else:
+            slow_print(error_message)
+            
+
 # STORY STRINGS and INPUT PROMTS #
 
 def play_game():
