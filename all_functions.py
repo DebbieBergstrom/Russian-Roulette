@@ -98,6 +98,9 @@ def get_character_choice():
     )
 
 
+def 
+
+
 def get_story(character_choice):
     """
     Displays the story that's tied to the chosen character.
@@ -112,7 +115,7 @@ def get_story(character_choice):
         "\nmight be your only chance to reclaim your freedom, or it might " +
         "\nbe your end. The answer lies in the hands of fate." +
         "\n" +
-        "\nIt's time to put the bullet in one of the chambers and spin the cylinder...\n")
+        "\nIt's time to put bullets in the chambers and spin the cylinder...\n")
             if character_choice == 'v'
             # Story if the user choose 'Assassin'
             else ("You're known not just as an assassin, but as an arbiter " +
@@ -122,8 +125,61 @@ def get_story(character_choice):
         "\nsinners - a single name, a single debt, a single chance at " +
         "\nredemption." +
         "\n" +
-        "\nIt's time to put the bullet in one of the chambers and spin the cylinder...\n")
-    )           
+        "\nIt's time to put bullets in the chambers and spin the cylinder...\n")
+    )
+
+
+    def get_difficulty_level_for_victim():
+    """
+    Ask the victim for the difficulty level they want to play on, based on their self-perceived guilt.
+    If 'Not so guilty', return 1.
+    If 'Somewhat guilty', return 2.
+    If 'Pretty guilty', return 3.
+    """
+    slow_print(
+        "\nAs the truth serum courses through your veins, you're incapable of lying. " +
+        "\nYou're asked about your guilt. Search deep within your conscience. " +
+        "\nJust how guilty are you? Choose the appropriate difficulty level for this round of Russian Roulette..." +
+        "\n" +
+        "\nKind of Not Guilty - Level Easy, has One bullet in the cylinder. Press (1)" +
+        "\nSomewhat Guilty - Level Medium, has Two bullets in the cylinder. Press (2)" +
+        "\nPretty Guilty - Level Hard, has Three bullets in the cylinder. Press (3)\n"
+    )
+
+    guilt_level = validate_input(
+        "",
+        ['1', '2', '3'],
+        "\nOnly the provided options are valid. Choose one of them.\n"
+    )
+
+    return int(guilt_level)
+
+
+    def get_difficulty_level_for_assassin():
+    """
+    Ask the assassin for the difficulty level they want to play on, based on their perception of the victim's guilt.
+    If 'Not so guilty', return 1.
+    If 'Somewhat guilty', return 2.
+    If 'Pretty guilty', return 3.
+    """
+    slow_print(
+        "\nYou have injected a truth serum into the victim's veins and no lies should now be told. " +
+        "\nForget about the contract, forget about the money. It's about sin and redemption now. " +
+        "\nLook at the victim in front of you. How guilty is he? Choose the appropriate difficulty level for this round of Russian Roulette..." +
+        "\n" +
+        "\nKind of Not Guilty - Level Easy, has One bullet in the cylinder. Press (1)" +
+        "\nSomewhat Guilty - Level Medium, has Two bullets in the cylinder. Press (2)" +
+        "\nPretty Guilty - Level Hard, has Three bullets in the cylinder. Press (3)\n"
+    )
+
+    guilt_level = validate_input(
+        "",
+        ['1', '2', '3'],
+        "\nOnly the provided options are valid. Choose one of them.\n"
+    )
+
+    return int(guilt_level)
+
 
 def get_spin_story(character_choice):
     """

@@ -12,7 +12,9 @@ from all_functions import (
     slow_print,
     slow_input,
     validate_input,
-    get_spin_story
+    get_spin_story,
+    get_difficulty_level_for_victim,
+    get_difficulty_level_for_assassin
 )
 
 
