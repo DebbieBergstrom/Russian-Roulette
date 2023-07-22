@@ -69,6 +69,8 @@ def display_rules():
     """
     Displays the rules
     """
+    os.system('clear')
+
     slow_print(
         "\nRussian Roulette is a deadly game of chance." +
         "\nHere's how it works:" +
@@ -104,6 +106,8 @@ def get_story(character_choice):
     """
     Displays the story that's tied to the chosen character.
     """
+    os.system('clear')
+
     return (
         # Story if the user choose 'Victim'
         ("\nCaught in the cruel grips of a notorious assassin for a debt " +
@@ -133,6 +137,9 @@ def get_difficulty_level_for_victim():
     If 'Somewhat guilty', return 2.
     If 'Pretty guilty', return 3.
     """
+    time.sleep(3)
+    os.system('clear')
+
     slow_print(
         "\nYou've been injected with truth serum and you're now incapable of lying. " +
         "\nJust how guilty are you? Choose the appropriate difficulty level for this round of Russian Roulette..." +
@@ -160,6 +167,9 @@ def get_difficulty_level_for_assassin():
     If 'Somewhat guilty', return 2.
     If 'Pretty guilty', return 3.
     """
+    time.sleep(3)
+    os.system('clear')
+
     slow_print(
         "\nYou have injected a truth serum into the victim and no lies should now be told. " +
         "\nHow guilty do you think he is? Choose the appropriate difficulty level for this round of Russian Roulette..." +
@@ -184,8 +194,10 @@ def ask_spin_cylinder():
     """
     Asks the player to spin the cylinder
     """
+    os.system('clear')
+
     validate_input(
-        "\nAlright, gun loaded! It's time to put bullets in the chambers and spin the cylinder... Press (s) to spin the cylinder...\n",
+        "\nAlright, gun loaded! It's time to put bullets in the chambers and spin the cylinder... \nPress (s) to spin the cylinder...\n",
         ['s'],
         "Only (s) is valid. There's no turning back...\n"
     )
@@ -195,6 +207,10 @@ def get_spin_story(character_choice):
     """
     Displays the story that's tied to the spinning of the cylinder.
     """
+    print("... spinning ...")
+    time.sleep(3)
+    os.system('clear')
+
     return (
         # Victim's story when 'S' is pressed
         ("\nCylinder is spun... Your life flashes before your eyes and" +
@@ -225,6 +241,10 @@ def get_result_message(character_choice, survival_result):
     Displays the survival/death message that's tied to 
     the chosen character.
     """
+    print("BOOM!")
+    time.sleep(3)
+    os.system('clear')
+
     if character_choice == 'v':
         message =(
         # Victims survival message
@@ -273,6 +293,7 @@ def ask_play_now_or_quit():
     elif play_now == "n":
         slow_print("\nWelcome back! Game ends...")
         time.sleep(2)
+        os.system('clear')
         sys.exit()
 
 
@@ -300,5 +321,5 @@ def ask_play_again_or_quit():
     elif play_again == "n":
         slow_print("\nNuff action for today, huh. See you next time!\nGame ends...")
         time.sleep(2)
+        os.system('clear')
         sys.exit()
-
