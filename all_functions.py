@@ -74,9 +74,10 @@ def display_rules():
         "\nHere's how it works:" +
         "\n" +
         "\n- Choose if you want to be assassin or victim." +
-        "\n- Press one of the prompted keys to choose, then 'Enter'" +
-        "\n- A revolver with a single bullet is placed on the table." +
-        "\n- The cylinder is spun, randomizing the position of the bullet." +
+        "\n- Choose the level of difficulty of the game. " +
+        "\n- Press one of the prompted keys whenever you choose, then 'Enter'" +
+        "\n- A revolver with 1, 2 or 3 bullets is loaded." +
+        "\n- The cylinder is spun, randomizing the position of the bullets." +
         "\n- The victim is forced to pull the trigger." +
         "\n- If the gun fires -victim dies, the assassin has carried out divine judgement." +
         "\n- If the gun doesn't fire -victim survives, the assassin walks away" +
@@ -111,9 +112,7 @@ def get_story(character_choice):
         "\nfeared for centuries - Russian Roulette. In the eerie silence " +
         "\nof the room, your heart pounds as you reach for the gun. This " +
         "\nmight be your only chance to reclaim your freedom, or it might " +
-        "\nbe your end. The answer lies in the hands of fate." +
-        "\n" +
-        "\nIt's time to put bullets in the chambers and spin the cylinder...\n")
+        "\nbe your end. The answer lies in the hands of fate.\n")
             if character_choice == 'v'
             # Story if the user choose 'Assassin'
             else ("You're known not just as an assassin, but as an arbiter " +
@@ -123,7 +122,7 @@ def get_story(character_choice):
         "\nsinners - a single name, a single debt, a single chance at " +
         "\nredemption." +
         "\n" +
-        "\nIt's time to put bullets in the chambers and spin the cylinder...\n")
+        "\nThe answer lies in the hands of fate.\n")
     )
 
 
@@ -135,12 +134,13 @@ def get_difficulty_level_for_victim():
     If 'Pretty guilty', return 3.
     """
     slow_print(
-        "\nYou've been injected with truth serum into your veins and incapable of lying. " +
-        "\nYou're asked about your guilt. Search deep within your conscience... " +
+        "\nYou've been injected with truth serum and you're now incapable of lying. " +
         "\nJust how guilty are you? Choose the appropriate difficulty level for this round of Russian Roulette..." +
         "\n" +
         "\nKind of Not Guilty - Level Easy, has One bullet in the cylinder. Press (1)" +
+        "\n" +
         "\nSomewhat Guilty - Level Medium, has Two bullets in the cylinder. Press (2)" +
+        "\n" +
         "\nPretty Guilty - Level Hard, has Three bullets in the cylinder. Press (3)\n"
     )
 
@@ -161,12 +161,13 @@ def get_difficulty_level_for_assassin():
     If 'Pretty guilty', return 3.
     """
     slow_print(
-        "\nYou have injected a truth serum into the victim's veins and no lies should now be told. " +
-        "\nForget about the contract, forget about the money. It's about sin and redemption now. " +
-        "\nLook at the victim in front of you. How guilty is he? Choose the appropriate difficulty level for this round of Russian Roulette..." +
+        "\nYou have injected a truth serum into the victim and no lies should now be told. " +
+        "\nHow guilty do you think he is? Choose the appropriate difficulty level for this round of Russian Roulette..." +
         "\n" +
         "\nKind of Not Guilty - Level Easy, has One bullet in the cylinder. Press (1)" +
+        "\n" +
         "\nSomewhat Guilty - Level Medium, has Two bullets in the cylinder. Press (2)" +
+        "\n" +
         "\nPretty Guilty - Level Hard, has Three bullets in the cylinder. Press (3)\n"
     )
 
@@ -177,6 +178,17 @@ def get_difficulty_level_for_assassin():
     )
 
     return int(guilt_level)
+
+
+def ask_spin_cylinder():
+    """
+    Asks the player to spin the cylinder
+    """
+    validate_input(
+        "\nAlright, gun loaded! It's time to put bullets in the chambers and spin the cylinder... Press (s) to spin the cylinder...\n",
+        ['s'],
+        "Only (s) is valid. There's no turning back...\n"
+    )
 
 
 def get_spin_story(character_choice):
@@ -194,6 +206,17 @@ def get_spin_story(character_choice):
             "\ntable, you feel the familiar rush of adrenaline. Is this" +
             "\nanother soul destined for salvation or damnation? The answer" +
             "\nlies in the hands of fate...\n")
+    )
+
+
+def ask_pull_trigger():
+    """
+    Asks the player to pull the trigger
+    """
+    validate_input(
+        "\nPull the trigger! Press (enter)\n",
+        [''],
+        "\nDon't extend the suffering. Press only (enter)\n"
     )
 
 
@@ -275,28 +298,7 @@ def ask_play_again_or_quit():
 
     # If no, player gets notified before the game ends
     elif play_again == "n":
-        slow_print("\nNuff action for today, huh. See you next time! Game ends...")
+        slow_print("\nNuff action for today, huh. See you next time!\nGame ends...")
         time.sleep(2)
         sys.exit()
-
-
-def ask_spin_cylinder():
-    """
-    Asks the player to spin the cylinder
-    """
-    validate_input(
-        "\nAlright, gun loaded! Now lets press (s) to spin the cylinder...\n",
-        ['s'],
-        "Only (s) is valid. There's no turning back...\n"
-    )
-
-def ask_pull_trigger():
-    """
-    Asks the player to pull the trigger
-    """
-    validate_input(
-        "\nPull the trigger! Press (enter)\n",
-        [''],
-        "\nDon't extend the suffering. Press only (enter)\n"
-    )
 
