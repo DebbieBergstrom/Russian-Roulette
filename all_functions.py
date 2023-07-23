@@ -6,7 +6,9 @@ from ascii import (
     gun_fires,
     welcome_art,
     cylinder_spun_victim_message,
-    cylinder_spun_assassin_message
+    cylinder_spun_assassin_message,
+    you_died,
+    victim_died
 )
 
 # GAME FUNCTIONS
@@ -215,7 +217,13 @@ def get_spin_story(character_choice):
     """
     Displays the story that's tied to the spinning of the cylinder.
     """
-    print("... spinning ...")
+    slow_print(
+    '''                            
+           _   '    '  _         
+.  .  .  _) /)//)/)//)(/.  .  .  
+           /         _/          
+    '''
+    )
     time.sleep(3)
     os.system('clear')
 
@@ -233,7 +241,7 @@ def ask_pull_trigger():
     """
     Asks the player to pull the trigger
     """
-    time.sleep(2)
+    time.sleep(3)
     validate_input(
         "\nPull the trigger! Press (enter)\n",
         [''],
@@ -246,33 +254,34 @@ def get_result_message(character_choice, survival_result):
     Displays the survival/death message that's tied to 
     the chosen character.
     """
+    os.system('clear')
     gun_fires()
     time.sleep(5)
     os.system('clear')
 
     if character_choice == 'v':
-        message =(
-        # Victims survival message
-        ("\nYou survived!\nDid you have an angel watching out for " +
-        "\nyou? Freedom is at your feet...\n")
-            if survival_result
-            # Victims death message
-            else (
-            "\nYou're dead!\nIf you don't see the bright light " +
-            "\nyou're supposed to walk towards, it might get very hot soon, sinner! " +
-            "\nToo late to be sorry... Purgatory awaits!\n")
-        )
+        if survival_result:
+            message = (
+                "\nYou survived!\nDid you have an angel watching out for " +
+                "\nyou? Freedom is at your feet...\n")
+        else:
+            ascii_art = you_died()
+            message = (
+                ascii_art + "\n" +
+                "\nIf you don't see the bright light " +
+                "\nyou're supposed to walk towards, it might get very hot soon, sinner! " +
+                "\nToo late to be sorry... Purgatory awaits!\n")
     else:
-        message = (
-            # Assassins message if victim survived
-            ("\nVictim survived!\nGod must have a greater plan! Let's find " +
+        if survival_result:
+            message = ("\nVictim survived!\nGod must have a greater plan! Let's find " +
             "\nanother sinner and test his faith.\n")
-            if survival_result
-            # Assassins message if victim died
-            else ("\nVictim's dead!\nWith a clear conscience you just sent " +
+        else: 
+            ascii_art = victim_died()
+            message =(
+            ascii_art + "\n" +
+            "\nWith a clear conscience you just sent " +
             "\nthe poor victim's soul to the eternal flames in purgatory.\n" +
             "\nLet's find another sinner and test their faith.\n")
-        )
     return message
 
 
