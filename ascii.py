@@ -1,9 +1,11 @@
+from termcolor import colored
+
 def gun_fires():
     """
     Displays ASCII art a BOOM indicating that the gun
     has been fired.
     """
-    print(
+    print(colored(
     ''' 
     $$$$$$$\   $$$$$$\   $$$$$$\  $$\      $$\ $$\ 
     $$  __$$\ $$  __$$\ $$  __$$\ $$$\    $$$ |$$ |
@@ -14,7 +16,7 @@ def gun_fires():
     $$$$$$$  | $$$$$$  | $$$$$$  |$$ | \_/ $$ |$$\ 
     \_______/  \______/  \______/ \__|     \__|\__|
     '''
-    )
+    , 'red'))
 
 
 def welcome_art():
@@ -23,7 +25,7 @@ def welcome_art():
     with welcome text.
     """
     print(
-    ''' 
+    colored(''' 
             ,___________________________________________/7_ 
            |-_______------. `\                             |
        _,/ | _______)     |___\____________________________|
@@ -41,7 +43,7 @@ def welcome_art():
  \ \####(/)####))
   \ \#########//
    \ \#######//
-    `---|_|--`\n'''
+    `---|_|--`\n''', 'blue')
     )
 
 
@@ -50,7 +52,7 @@ def cylinder_spun_victim_message():
     Displays ASCII art of a revolver cylinder being pointed in front
     of you along with a suspenseful message for the victim.
     """
-    print(
+    print(colored(
     '''
       .--.      .-'.      .--.      .--.      .--.      .--.      .`-.     
 :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.
@@ -77,7 +79,7 @@ def cylinder_spun_victim_message():
 :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.
 '      `--'      `.-'      `--'      `--'      `--'      `-.'      `--' 
     '''
-    )
+    , 'yellow'))
 
 
 def cylinder_spun_assassin_message():
@@ -85,7 +87,7 @@ def cylinder_spun_assassin_message():
     Displays ASCII art of a revolver cylinder being pointed in front
     of you along with a suspenseful message for the assassin.
     """
-    print(
+    print(colored(
     '''
       .--.      .-'.      .--.      .--.      .--.      .--.      .`-.      
 :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\:::::::.
@@ -112,39 +114,53 @@ def cylinder_spun_assassin_message():
 :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.
 '      `--'      `.-'      `--'      `--'      `--'      `-.'      `--'       
     '''
-    )
+    , 'yellow'))
 
 
 def you_died():
     """
     Displays ASCII art of a message indicating the player died.
     """
-    return'''
+    # Each color section is defined as a separate string
+    yellow_part = colored('''
      )    )           (     (        (       ____ 
-  ( /( ( /(           )\ )  )\ )     )\ )   |   / 
+  ( /( ( /(           )\ )  )\ )     )\ )   |   / ''', 'yellow')
+
+    magenta_part = colored('''
   )\()))\())     (   (()/( (()/( (  (()/(   |  /  
- ((_)\((_)\      )\   /(_)) /(_)))\  /(_))  | /   
+ ((_)\((_)\      )\   /(_)) /(_)))\  /(_))  | /   ''', 'magenta')
+
+    red_part = colored('''
 __ ((_) ((_)  _ ((_) (_))_ (_)) ((_)(_))_   |/    
 \ \ / // _ \ | | | |  |   \|_ _|| __||   \ (      
  \ V /| (_) || |_| |  | |) || | | _| | |) |)\     
-  |_|  \___/  \___/   |___/|___||___||___/((_)    
-    '''
+  |_|  \___/  \___/   |___/|___||___||___/((_)    ''', 'red')  
+
+    return yellow_part + magenta_part + red_part
+
 
 
 def victim_died():
     """
     Displays ASCII art of a message indicating the victim died.
     """
-    return '''
+    # Each color section is defined as a separate string
+    yellow_part = colored('''
         (               (      *      (    (      (      ____ 
-        )\ )  (    *   ))\ ) (  `     )\ ) )\ )   )\ )  |   / 
- (   ( (()/(  )\ ` )  /(()/( )\))(   (()/((()/(( (()/(  |  /  
+        )\ )  (    *   ))\ ) (  `     )\ ) )\ )   )\ )  |   / ''', 'yellow')
+
+    magenta_part = colored('''
+ (   ( (()/(  )\ ` )  /(()/( )\))(   (()/((()/(( (()/(  |  /  ''', 'magenta')
+
+    red_part = colored('''
  )\  )\ /(_)|((_) ( )(_))(_)|(_)()\   /(_))/(_))\ /(_)) | /   
 ((_)((_|_)) )\___(_(_()|_)) (_()((_) (_))_(_))((_|_))_  |/    
-\ \ / /|_ _((/ __|_   _|_ _||  \/  |  |   \_ _| __|   \(      
+\ \ / /|_ _((/ __|_ _||  \/  |  |   \_ _| __|   \(      
  \ V /  | | | (__  | |  | | | |\/| |  | |) | || _|| |) )\     
-  \_/  |___| \___| |_| |___||_|  |_|  |___/___|___|___((_)    
-    '''
+  \_/  |___| \___| |_| |___||_|  |_|  |___/___|___|___((_)''', 'red')  
+
+    return yellow_part + magenta_part + red_part
+
 
 
 def you_survived():

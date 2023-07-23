@@ -2,6 +2,7 @@ import random
 import os
 import sys
 import time
+from termcolor import colored
 from ascii import (
     gun_fires,
     welcome_art,
