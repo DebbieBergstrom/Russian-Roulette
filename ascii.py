@@ -1,11 +1,11 @@
-from termcolor import colored
+from termcolor import colored, cprint 
 
 def gun_fires():
     """
     Displays ASCII art a BOOM indicating that the gun
     has been fired.
     """
-    print(colored(
+    cprint(
     ''' 
     $$$$$$$\   $$$$$$\   $$$$$$\  $$\      $$\ $$\ 
     $$  __$$\ $$  __$$\ $$  __$$\ $$$\    $$$ |$$ |
@@ -16,7 +16,7 @@ def gun_fires():
     $$$$$$$  | $$$$$$  | $$$$$$  |$$ | \_/ $$ |$$\ 
     \_______/  \______/  \______/ \__|     \__|\__|
     '''
-    , 'red'))
+    , 'red')
 
 
 def welcome_art():
@@ -24,8 +24,7 @@ def welcome_art():
     ASCII art displayed at the very beginning of game
     with welcome text.
     """
-    print(
-    colored(''' 
+    cprint(''' 
             ,___________________________________________/7_ 
            |-_______------. `\                             |
        _,/ | _______)     |___\____________________________|
@@ -43,8 +42,7 @@ def welcome_art():
  \ \####(/)####))
   \ \#########//
    \ \#######//
-    `---|_|--`\n''', 'blue')
-    )
+    `---|_|--`\n''', 'yellow')
 
 
 def cylinder_spun_victim_message():
@@ -52,7 +50,7 @@ def cylinder_spun_victim_message():
     Displays ASCII art of a revolver cylinder being pointed in front
     of you along with a suspenseful message for the victim.
     """
-    print(colored(
+    cprint(
     '''
       .--.      .-'.      .--.      .--.      .--.      .--.      .`-.     
 :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.
@@ -79,7 +77,7 @@ def cylinder_spun_victim_message():
 :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.
 '      `--'      `.-'      `--'      `--'      `--'      `-.'      `--' 
     '''
-    , 'yellow'))
+    , 'blue')
 
 
 def cylinder_spun_assassin_message():
@@ -87,7 +85,7 @@ def cylinder_spun_assassin_message():
     Displays ASCII art of a revolver cylinder being pointed in front
     of you along with a suspenseful message for the assassin.
     """
-    print(colored(
+    cprint(
     '''
       .--.      .-'.      .--.      .--.      .--.      .--.      .`-.      
 :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\:::::::.
@@ -114,7 +112,7 @@ def cylinder_spun_assassin_message():
 :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.
 '      `--'      `.-'      `--'      `--'      `--'      `-.'      `--'       
     '''
-    , 'yellow'))
+    , 'blue')
 
 
 def you_died():
@@ -139,7 +137,6 @@ __ ((_) ((_)  _ ((_) (_))_ (_)) ((_)(_))_   |/
     return yellow_part + magenta_part + red_part
 
 
-
 def victim_died():
     """
     Displays ASCII art of a message indicating the victim died.
@@ -162,43 +159,48 @@ def victim_died():
     return yellow_part + magenta_part + red_part
 
 
-
 def you_survived():
     """
     Displays ASCII art of a message indicating the player has survived.
     """
-    return """
-__  __               _____                  _                ____
-\ \/ /___  __  __   / ___/__  ________   __(_)   _____  ____/ / /
- \  / __ \/ / / /   \__ \/ / / / ___/ | / / / | / / _ \/ __  / / 
- / / /_/ / /_/ /   ___/ / /_/ / /   | |/ / /| |/ /  __/ /_/ /_/  
-/_/\____/\__,_/   /____/\__,_/_/    |___/_/ |___/\___/\__,_(_)   
-"""
+    cprint(
+    """
+    __  __               _____                  _                ____
+    \ \/ /___  __  __   / ___/__  ________   __(_)   _____  ____/ / /
+     \  / __ \/ / / /   \__ \/ / / / ___/ | / / / | / / _ \/ __  / / 
+     / / /_/ / /_/ /   ___/ / /_/ / /   | |/ / /| |/ /  __/ /_/ /_/  
+    /_/\____/\__,_/   /____/\__,_/_/    |___/_/ |___/\___/\__,_(_)   
+    """
+    , 'green')
 
 
 def victim_survived():
     """
     Displays ASCII art of a message indicating the victim has survived.
     """
-    return """
+    cprint( 
+    """
    _____                  _                ____
   / ___/__  ________   __(_)   _____  ____/ / /
   \__ \/ / / / ___/ | / / / | / / _ \/ __  / / 
  ___/ / /_/ / /   | |/ / /| |/ /  __/ /_/ /_/  
 /____/\__,_/_/    |___/_/ |___/\___/\__,_(_)
-"""
+    """
+    , 'green')
 
 def injection():
     """
     Art showing a syringe to add to the story where victim
     gets injected with truth serum.
     """
-    return """
+    cprint(
+    """
       |___________________________________
 |-----|- - -|''''|''''|''''|''''|''''|'**\\|__
 |- -  |  cc 6    5    4    3    2    1 *** __]==--------------
 |-----|________________________________**/|
 '     |````````````````````````````````````
     """
+    , 'light_green')
 
 

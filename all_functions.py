@@ -2,7 +2,7 @@ import random
 import os
 import sys
 import time
-from termcolor import colored
+from termcolor import colored, cprint
 from ascii import (
     gun_fires,
     welcome_art,
@@ -109,22 +109,19 @@ def display_rules():
     """
     os.system('clear')
     print(divider) 
-    slow_print(
-        "\nRussian Roulette is a deadly game of chance." +
-        "\nHere's how it works:" +
-        "\n" +
-        "\n- Choose if you want to be assassin or victim." +
-        "\n- Choose the level of difficulty of the game. " +
-        "\n- Press one of the prompted keys whenyou choose, then 'Enter'" +
-        "\n- A revolver with 1, 2 or 3 bullets is loaded." +
-        "\n- The cylinder is spun, randomizing the position of the bullets." +
-        "\n- The victim is forced to pull the trigger." +
-        "\n- If the gun fires -victim dies and divine judgement prevails." +
-        "\n- If the gun doesn't fire -victim lives, the assassin walks away" +
-        "\n" +
-        "\nMay fate be in your favor.\n" +
-        "\n" 
-    )
+    cprint("\nRussian Roulette is a deadly game of chance." +
+           "\nHere's how it works:", 'cyan', attrs=['bold'])
+    cprint("\n- Choose if you want to be assassin or victim." +
+           "\n- Choose the level of difficulty of the game." +
+           "\n- Press one of the prompted keys when you choose, then 'Enter'" +
+           "\n- A revolver with 1, 2 or 3 bullets is loaded." +
+           "\n- The cylinder is spun, randomizing the position of the bullets." +
+           "\n- The victim is forced to pull the trigger." +
+           "\n- If the gun fires -victim dies and divine judgement prevails." +
+           "\n- If the gun doesn't fire -victim lives, the assassin walks away" +
+           "\n" +
+           "\nMay fate be in your favor.\n" +
+           "\n", 'cyan')
     print(divider)
 
 
@@ -186,22 +183,31 @@ def get_difficulty_level_for_victim():
     If 'Pretty guilty', return 3.
     """
     time.sleep(2)
-    ascii_syringe = injection()
-    print(ascii_syringe)
+    injection()
 
     slow_print(
         "\nYou've been injected with truth serum and you're incapable " +
         "\nof lying. Just how guilty are you? Choose the appropriate " +
-        "\ndifficulty level for this round of Russian Roulette..." +
-        "\n" + divider_dash +
+        "\ndifficulty level for this round of Russian Roulette...\n" +
+        "\n"
+    )
+
+    cprint("\n" + divider_dash, 'white', end='')
+    cprint(
         "\nKind of Not Guilty - Level Easy, has One bullet in the cylinder. " +
-        "\nPress (1)\n" +
-        "\n" + divider_dash +
+        "\nPress (1)\n", 'yellow', end=''
+    )
+
+    cprint("\n" + divider_dash, 'white', end='')
+    cprint(
         "\nSomewhat Guilty - Level Medium, has Two bullets in the cylinder. " +
-        "\nPress (2)\n" +
-        "\n" + divider_dash +
+        "\nPress (2)\n", 'green', end=''
+    )
+
+    cprint("\n" + divider_dash, 'white', end='')
+    cprint(
         "\nPretty Guilty - Level Hard, has Three bullets in the cylinder. " +
-        "\nPress (3)\n"
+        "\nPress (3)\n", 'red'
     )
 
     guilt_level = validate_input(
@@ -209,9 +215,9 @@ def get_difficulty_level_for_victim():
         ['1', '2', '3'],
         "\nOnly the provided options are valid. Choose one of them.\n"
     )
-    
+        
     return int(guilt_level)
-
+    
 
 def get_difficulty_level_for_assassin():
     """
@@ -223,23 +229,31 @@ def get_difficulty_level_for_assassin():
     """
     
     time.sleep(2)
-    ascii_syringe = injection()
-    print(ascii_syringe)
+    injection()
 
     slow_print(
-        "\nYou have injected a truth serum into the victim and no lies " +
-        "\nshould now be told. How guilty do you think he is? Choose the " +
-        "\nappropriate difficulty level for this round of " +
-        "\nRussian Roulette...\n"
-        "\n" + divider_dash +
+    "\nYou have injected a truth serum into the victim and no lies " +
+    "\nshould now be told. How guilty do you think he is? Choose the " +
+    "\nappropriate difficulty level for this round of " +
+    "\nRussian Roulette...\n"
+    )
+
+    cprint("\n" + divider_dash, 'white', end='')
+    cprint(
         "\nKind of Not Guilty - Level Easy, has One bullet in the cylinder. " +
-        "\nPress (1)\n" +
-        "\n" + divider_dash +
+        "\nPress (1)\n", 'yellow', end=''
+    )
+
+    cprint("\n" + divider_dash, 'white', end='')
+    cprint(
         "\nSomewhat Guilty - Level Medium, has Two bullets in the cylinder. " +
-        "\nPress (2)\n" +
-        "\n" + divider_dash +
+        "\nPress (2)\n", 'green', end=''
+    )
+
+    cprint("\n" + divider_dash, 'white', end='')
+    cprint(
         "\nPretty Guilty - Level Hard, has Three bullets in the cylinder. " +
-        "\nPress (3)\n"
+        "\nPress (3)\n", 'red'
     )
 
     guilt_level = validate_input(
@@ -291,11 +305,13 @@ def get_spin_story(character_choice):
 
 def ask_pull_trigger():
     """
-    Asks the player to pull the trigger
+    Asks the player to pull the trigger in a blinking red
+    to make it look more urgent.
     """
     time.sleep(3)
+    cprint("\nPULL THE TRIGGER!", 'red', attrs=['blink'])
     validate_input(
-        "\nPULL THE TRIGGER! Press (enter)\n",
+        "\nPress (enter)\n",
         [''],
         "\nDon't extend the suffering. Press only (enter)\n"
     )
@@ -316,9 +332,9 @@ def get_result_message(character_choice, survival_result):
 
     if character_choice == 'v':
         if survival_result:
-            ascii_art = you_survived()
+            you_survived()
             message = (
-                ascii_art + "\n" +
+                "\n" +
                 "\nDude, relax, the gun just clicked. You survived! " +
                 "\nDid you have an angel watching out for " +
                 "\nyou? Freedom is at your feet...\n")
@@ -332,9 +348,9 @@ def get_result_message(character_choice, survival_result):
                 "\nPurgatory awaits!\n")
     else:
         if survival_result:
-            ascii_art = victim_survived()
+            victim_survived()
             message = (
-                ascii_art + "\n" +
+                "\n" +
                 "\nYou were kinda expecting a BOOM, but the gun just " +
                 "\nclicked... Guess God has a greater plan! " +
                 "\nLet's find another sinner and test his faith.\n")
