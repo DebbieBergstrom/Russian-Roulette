@@ -214,6 +214,8 @@ After following these steps, the app was successfully deployed to Heroku.
 - [Youtube](https://www.youtube.com/watch?v=lqAQN0T_Ues&t=580s) third tutorial russian roulette game
 
 - [ASCII Art](https://https://www.asciiart.eu/weapons/guns) for pre-made ASCII weapon art
+- [ASCII Textcool](https://textkool.com/en) ASCII text generator
+
 
 - [ChatGPT](https://openai.com/) To create some of the story content
 
