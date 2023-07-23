@@ -9,6 +9,8 @@ from ascii import (
     cylinder_spun_assassin_message,
     you_died,
     victim_died
+    you_survived,
+    victim_survived
 )
 
 # GAME FUNCTIONS
@@ -274,7 +276,9 @@ def get_result_message(character_choice, survival_result):
 
     if character_choice == 'v':
         if survival_result:
+            ascii_art = you_survived()
             message = (
+                ascii_art + "\n" +
                 "\nDude, relax, the gun just clicked. You survived! " +
                 "\nDid you have an angel watching out for " +
                 "\nyou? Freedom is at your feet...\n")
@@ -288,7 +292,9 @@ def get_result_message(character_choice, survival_result):
                 "\nPurgatory awaits!\n")
     else:
         if survival_result:
+            ascii_art = victim_survived()
             message = (
+                ascii_art + "\n" +
                 "\nYou were kinda expecting a BOOM, but the gun just " +
                 "\nclicked... Guess God has a greater plan! " +
                 "\nLet's find another sinner and test his faith.\n")
