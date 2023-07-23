@@ -221,15 +221,11 @@ def get_spin_story(character_choice):
 
     return (
         # Victim's story when 'S' is pressed
-        ("\nCylinder is spun... Your life flashes before your eyes and" +
-        "\nyou question yourself and how you ended up here. Well, you" +
-        "\ndon't have any choices but to do as you're told...\n")
+        cylinder_spun_victim_message()
             if character_choice == 'v'
             # Assassin's story when 'S' is pressed
-            else ("\nCylinder is spun... As you place the revolver on the" +
-            "\ntable, you feel the familiar rush of adrenaline. Is this" +
-            "\nanother soul destined for salvation or damnation? The answer" +
-            "\nlies in the hands of fate...\n")
+            else 
+            cylinder_spun_assassin_message()
     )
 
 
@@ -237,6 +233,7 @@ def ask_pull_trigger():
     """
     Asks the player to pull the trigger
     """
+    time.sleep(2)
     validate_input(
         "\nPull the trigger! Press (enter)\n",
         [''],
@@ -250,7 +247,7 @@ def get_result_message(character_choice, survival_result):
     the chosen character.
     """
     gun_fires()
-    time.sleep(3)
+    time.sleep(5)
     os.system('clear')
 
     if character_choice == 'v':
