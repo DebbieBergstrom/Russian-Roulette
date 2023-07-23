@@ -26,7 +26,7 @@ def main():
         play_game()
         character_choice = get_character_choice()
 
-         # Takes user to see the rules if wanted
+        # Takes user to see the rules if wanted
         if character_choice == "r":
             display_rules()
             if not ask_play_now_or_quit():
@@ -40,12 +40,13 @@ def main():
             elif character_choice == 'a':
                 bullets = get_difficulty_level_for_assassin()
             ask_spin_cylinder()
-            spin_story = get_spin_story(character_choice) 
+            spin_story = get_spin_story(character_choice)
             ask_pull_trigger()
             survival_result = randomize_spin(bullets)
             message = get_result_message(character_choice, survival_result)
             slow_print(message)
             if not ask_play_again_or_quit():
-                continue   
-    
+                continue
+
+
 main()
