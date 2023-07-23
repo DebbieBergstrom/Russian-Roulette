@@ -8,10 +8,29 @@ from ascii import (
     cylinder_spun_victim_message,
     cylinder_spun_assassin_message,
     you_died,
-    victim_died
+    victim_died,
     you_survived,
-    victim_survived
+    victim_survived,
+    injection
 )
+
+
+divider = "\n<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>\n"
+divider_dash = "--------------------------------------------------------------"
+
+def print_divider():
+    """
+    Prints a divider at different places in 
+    the game to add to the design and UX.
+    """
+    print(divider)
+
+def print_divider_dash():
+    """
+    Prints a divider at different places in 
+    the game to add to the design and UX.
+    """
+    print(divider_dash)
 
 # GAME FUNCTIONS
 
@@ -66,18 +85,21 @@ def play_game():
     Initial introduction message gets displayed for the user
     with ASCII art of a revolver.
     """
+    print(divider)
     welcome_art()
-    time.sleep(3)
+    print(divider)
+    time.sleep(2)
     slow_print(
-        "\n" +
         "\nAre you the desperate victim, backed into " +
         "\na corner with only a slim chance of survival? Or " +
         "\nare you the divine assassin, believing every pull " +
         "\nof the trigger to be a judgement from God? " +
         "\nThe choice is yours." +
-        "\nWelcome to the twilight world where morality " +
-        "\nmeets mortality.\n"
+        "\nStep in to the twilight world where morality " +
+        "\nmeets mortality.\n" +
+        "\n" 
     )
+    print(divider)  
 
 
 def display_rules():
@@ -85,7 +107,7 @@ def display_rules():
     Displays the rules
     """
     os.system('clear')
-
+    print(divider) 
     slow_print(
         "\nRussian Roulette is a deadly game of chance." +
         "\nHere's how it works:" +
@@ -99,8 +121,10 @@ def display_rules():
         "\n- If the gun fires -victim dies and divine judgement prevails." +
         "\n- If the gun doesn't fire -victim lives, the assassin walks away" +
         "\n" +
-        "\nMay fate be in your favor.\n"
+        "\nMay fate be in your favor.\n" +
+        "\n" 
     )
+    print(divider)
 
 
 def get_character_choice():
@@ -122,13 +146,14 @@ def get_story(character_choice):
     Displays the story that's tied to the chosen character.
     """
     os.system('clear')
+    print(divider)
 
     return (
         # Story if the user choose 'Victim'
         ("\nCaught in the cruel grips of a notorious assassin for a debt " +
          "\nyou could never pay off, you are given a chilling choice: your " +
          "\nlife or a game. A game so simple, yet so deadly it's been " +
-         "\nfeared for centuries - Russian Roulette. In the eerie silence " +
+         "\nfeared for centuries - Russian Roulette.\nIn the eerie silence " +
          "\nof the room, your heart pounds as you reach for the gun. This " +
          "\nmight be your only chance to reclaim your freedom, or it might " +
          "\nbe your end. The answer lies in the hands of fate." +
@@ -146,7 +171,8 @@ def get_story(character_choice):
             "\nchance at redemption." +
             "\n" +
             "\nIt's time to put bullets in the chambers " +
-            "\nand spin the cylinder...\n")
+            "\nand spin the cylinder...\n" +
+            "\n")
     )
 
 
@@ -158,17 +184,21 @@ def get_difficulty_level_for_victim():
     If 'Somewhat guilty', return 2.
     If 'Pretty guilty', return 3.
     """
-    time.sleep(3)
+    time.sleep(2)
+    ascii_syringe = injection()
+    print(ascii_syringe)
 
     slow_print(
-        "\nYou've been injected with truth serum and you're now incapable " +
+        "\nYou've been injected with truth serum and you're incapable " +
         "\nof lying. Just how guilty are you? Choose the appropriate " +
         "\ndifficulty level for this round of Russian Roulette..." +
-        "\n" +
+        "\n" + divider_dash +
         "\nKind of Not Guilty - Level Easy, has One bullet in the cylinder. " +
         "\nPress (1)\n" +
+        "\n" + divider_dash +
         "\nSomewhat Guilty - Level Medium, has Two bullets in the cylinder. " +
         "\nPress (2)\n" +
+        "\n" + divider_dash +
         "\nPretty Guilty - Level Hard, has Three bullets in the cylinder. " +
         "\nPress (3)\n"
     )
@@ -178,7 +208,7 @@ def get_difficulty_level_for_victim():
         ['1', '2', '3'],
         "\nOnly the provided options are valid. Choose one of them.\n"
     )
-
+    
     return int(guilt_level)
 
 
@@ -190,18 +220,23 @@ def get_difficulty_level_for_assassin():
     If 'Somewhat guilty', return 2.
     If 'Pretty guilty', return 3.
     """
-    time.sleep(3)
+    
+    time.sleep(2)
+    ascii_syringe = injection()
+    print(ascii_syringe)
 
     slow_print(
         "\nYou have injected a truth serum into the victim and no lies " +
         "\nshould now be told. How guilty do you think he is? Choose the " +
         "\nappropriate difficulty level for this round of " +
         "\nRussian Roulette...\n"
-        "\n" +
+        "\n" + divider_dash +
         "\nKind of Not Guilty - Level Easy, has One bullet in the cylinder. " +
         "\nPress (1)\n" +
+        "\n" + divider_dash +
         "\nSomewhat Guilty - Level Medium, has Two bullets in the cylinder. " +
         "\nPress (2)\n" +
+        "\n" + divider_dash +
         "\nPretty Guilty - Level Hard, has Three bullets in the cylinder. " +
         "\nPress (3)\n"
     )
@@ -220,6 +255,7 @@ def ask_spin_cylinder():
     Asks the player to spin the cylinder
     """
     os.system('clear')
+    print(divider)
 
     validate_input(
         "\nGun's loaded!\nPress (s) to spin the cylinder...\n",
@@ -239,7 +275,7 @@ def get_spin_story(character_choice):
            /         _/          
     '''
     )
-    time.sleep(3)
+    time.sleep(2)
     os.system('clear')
 
     return (
@@ -258,10 +294,11 @@ def ask_pull_trigger():
     """
     time.sleep(3)
     validate_input(
-        "\nPull the trigger! Press (enter)\n",
+        "\nPULL THE TRIGGER! Press (enter)\n",
         [''],
         "\nDon't extend the suffering. Press only (enter)\n"
     )
+    print(divider)
 
 
 def get_result_message(character_choice, survival_result):
@@ -270,7 +307,9 @@ def get_result_message(character_choice, survival_result):
     the chosen character.
     """
     os.system('clear')
+    print(divider)
     gun_fires()
+    print(divider)
     time.sleep(5)
     os.system('clear')
 
@@ -321,6 +360,8 @@ def ask_play_now_or_quit():
         ['y', 'n'],
         "\nOnly the provided options are valid. Choose one of them.\n"
     )
+    print(divider)
+
 
     # If yes, player is taken back to play again
     if play_now == "y":
@@ -341,6 +382,7 @@ def ask_play_again_or_quit():
     If 'yes', clears screen and return True.
     If 'no', prints end message and quit the game.
     """
+    print(divider)
     play_again = validate_input(
         "\nPlay again?" +
         "\nYes press(Y), No press(N)\n",
