@@ -1,4 +1,8 @@
 def gun_fires():
+    """
+    Displays ASCII art a BOOM indicating that the gun
+    has been fired.
+    """
     print(
     ''' 
     $$$$$$$\   $$$$$$\   $$$$$$\  $$\      $$\ $$\ 
@@ -42,6 +46,10 @@ def welcome_art():
 
 
 def cylinder_spun_victim_message():
+    """
+    Displays ASCII art of a revolver cylinder being pointed in front
+    of you along with a suspenseful message for the victim.
+    """
     print(
     '''
       .--.      .-'.      .--.      .--.      .--.      .--.      .`-.     
@@ -73,6 +81,10 @@ def cylinder_spun_victim_message():
 
 
 def cylinder_spun_assassin_message():
+    """
+    Displays ASCII art of a revolver cylinder being pointed in front
+    of you along with a suspenseful message for the assassin.
+    """
     print(
     '''
       .--.      .-'.      .--.      .--.      .--.      .--.      .`-.      
@@ -104,6 +116,9 @@ def cylinder_spun_assassin_message():
 
 
 def you_died():
+    """
+    Displays ASCII art of a message indicating the player died.
+    """
     return'''
      )    )           (     (        (       ____ 
   ( /( ( /(           )\ )  )\ )     )\ )   |   / 
@@ -117,6 +132,9 @@ __ ((_) ((_)  _ ((_) (_))_ (_)) ((_)(_))_   |/
 
 
 def victim_died():
+    """
+    Displays ASCII art of a message indicating the victim died.
+    """
     return '''
         (               (      *      (    (      (      ____ 
         )\ )  (    *   ))\ ) (  `     )\ ) )\ )   )\ )  |   / 
@@ -130,6 +148,9 @@ def victim_died():
 
 
 def you_survived():
+    """
+    Displays ASCII art of a message indicating the player has survived.
+    """
     return """
 __  __               _____                  _                ____
 \ \/ /___  __  __   / ___/__  ________   __(_)   _____  ____/ / /
@@ -140,6 +161,9 @@ __  __               _____                  _                ____
 
 
 def victim_survived():
+    """
+    Displays ASCII art of a message indicating the victim has survived.
+    """
     return """
    _____                  _                ____
   / ___/__  ________   __(_)   _____  ____/ / /
