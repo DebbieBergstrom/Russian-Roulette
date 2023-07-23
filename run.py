@@ -1,3 +1,15 @@
+from termcolor import colored, cprint
+from ascii import (
+    gun_fires,
+    welcome_art,
+    cylinder_spun_victim_message,
+    cylinder_spun_assassin_message,
+    you_died,
+    victim_died,
+    you_survived,
+    victim_survived,
+    injection
+)
 from all_functions import (
     play_game,
     display_rules,

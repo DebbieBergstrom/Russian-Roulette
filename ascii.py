@@ -1,4 +1,4 @@
-from termcolor import colored, cprint 
+from termcolor import colored, cprint
 
 def gun_fires():
     """
