@@ -19,12 +19,14 @@ from ascii import (
 divider = "\n<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>\n"
 divider_dash = "--------------------------------------------------------------"
 
+
 def print_divider():
     """
     Prints a divider at different places in 
     the game to add to the design and UX.
     """
     print(divider)
+
 
 def print_divider_dash():
     """
