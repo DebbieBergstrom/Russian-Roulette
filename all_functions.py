@@ -116,7 +116,9 @@ def get_story(character_choice):
         "\nfeared for centuries - Russian Roulette. In the eerie silence " +
         "\nof the room, your heart pounds as you reach for the gun. This " +
         "\nmight be your only chance to reclaim your freedom, or it might " +
-        "\nbe your end. The answer lies in the hands of fate.\n")
+        "\nbe your end. The answer lies in the hands of fate." +
+         "\n" +
+        "\nIt's time to put bullets in the chambers and spin the cylinder...\n")
             if character_choice == 'v'
             # Story if the user choose 'Assassin'
             else ("You're known not just as an assassin, but as an arbiter " +
@@ -126,7 +128,7 @@ def get_story(character_choice):
         "\nsinners - a single name, a single debt, a single chance at " +
         "\nredemption." +
         "\n" +
-        "\nThe answer lies in the hands of fate.\n")
+        "\nIt's time to put bullets in the chambers and spin the cylinder... \n")
     )
 
 
@@ -138,7 +140,6 @@ def get_difficulty_level_for_victim():
     If 'Pretty guilty', return 3.
     """
     time.sleep(3)
-    os.system('clear')
 
     slow_print(
         "\nYou've been injected with truth serum and you're now incapable of lying. " +
@@ -168,7 +169,6 @@ def get_difficulty_level_for_assassin():
     If 'Pretty guilty', return 3.
     """
     time.sleep(3)
-    os.system('clear')
 
     slow_print(
         "\nYou have injected a truth serum into the victim and no lies should now be told. " +
@@ -197,7 +197,7 @@ def ask_spin_cylinder():
     os.system('clear')
 
     validate_input(
-        "\nAlright, gun loaded! It's time to put bullets in the chambers and spin the cylinder... \nPress (s) to spin the cylinder...\n",
+        "\nGun's loaded!\nPress (s) to spin the cylinder...\n",
         ['s'],
         "Only (s) is valid. There's no turning back...\n"
     )
@@ -321,5 +321,4 @@ def ask_play_again_or_quit():
     elif play_again == "n":
         slow_print("\nNuff action for today, huh. See you next time!\nGame ends...")
         time.sleep(2)
-        os.system('clear')
         sys.exit()
