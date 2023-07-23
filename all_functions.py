@@ -2,6 +2,12 @@ import random
 import os
 import sys
 import time
+from ascii import (
+    gun_fires,
+    welcome_art,
+    cylinder_spun_victim_message,
+    cylinder_spun_assassin_message
+)
 
 # GAME FUNCTIONS
 
@@ -51,15 +57,17 @@ def validate_input(promt, valid_inputs, error_message):
 def play_game():
     """
     Initial introduction message gets displayed for the user
+    with ASCII art of a revolver.
     """
+    welcome_art()
+    time.sleep(3)
     slow_print(
-    "Welcome to the game, a deadly dance of " +
-    "\nRussian Roulette!\n" +
+    "\n" +
     "\nAre you the desperate victim, backed into " +
     "\na corner with only a slim chance of survival? Or " +
     "\nare you the divine assassin, believing every pull " +
     "\nof the trigger to be a judgement from God? " +
-    "\nThe choice is yours.\n" +
+    "\nThe choice is yours." +
     "\nWelcome to the twilight world where morality " +
     "\nmeets mortality.\n"
 )
@@ -241,7 +249,7 @@ def get_result_message(character_choice, survival_result):
     Displays the survival/death message that's tied to 
     the chosen character.
     """
-    print("BOOM!")
+    gun_fires()
     time.sleep(3)
     os.system('clear')
 
