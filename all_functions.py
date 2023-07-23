@@ -275,7 +275,8 @@ def get_result_message(character_choice, survival_result):
     if character_choice == 'v':
         if survival_result:
             message = (
-                "\nYou survived!\nDid you have an angel watching out for " +
+                "\nDude, relax, the gun just clicked. You survived! " +
+                "\nDid you have an angel watching out for " +
                 "\nyou? Freedom is at your feet...\n")
         else:
             ascii_art = you_died()
@@ -287,8 +288,10 @@ def get_result_message(character_choice, survival_result):
                 "\nPurgatory awaits!\n")
     else:
         if survival_result:
-            message = ("\nVictim survived!\nGod must have a greater plan! " +
-                       "\nLet's find another sinner and test his faith.\n")
+            message = (
+                "\nYou were kinda expecting a BOOM, but the gun just " +
+                "\nclicked... Guess God has a greater plan! " +
+                "\nLet's find another sinner and test his faith.\n")
         else:
             ascii_art = victim_died()
             message = (
