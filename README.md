@@ -181,9 +181,22 @@ The <b>PEP8</b> validator was used to validate all Python modules in this projec
 ### Manual Testing
 Family and friends tested my game on their devices no issues were reported.
 
-**TEST** | **ACTION** | **EXPECTATION** | **RESULT** 
-----------|----------|----------|----------
-Validation of inputs for "Y" and "N" questions	| test input of both lower- and uppercase	| both should work as inputs | Works as expected
+**TEST** | **ACTION** | **EXPECTATION** | **RESULT**
+----------|----------|----------|----------|
+get_character_choice() | Input 'victim', 'assassin', or 'rules' | Game character is selected or rules are displayed | All three works as expected |
+get_character_choice() | Input invalid choice (anything other than 'victim', 'assassin', or 'rules') | Error message displays: "Only the provided options are valid. Choose one of them." | Works as expected |
+get_difficulty_level() | Input difficulty level ('low'(1), 'medium'(2), 'high'(3)) | Difficulty level is set according to input | All three works as expected |
+get_difficulty_level() | Input invalid difficulty level (anything other than 'low'(1), 'medium'(2), 'high'(3)) | Error message displays: "Only the provided options are valid. Choose one of them." | Works as expected |
+ask_spin_cylinder() | Input (s) to 'spin' | Function indicating cylinder is spinning is executed | Works as expected |
+ask_spin_cylinder() | Input anything other than (s) to 'spin' | Error message displays: "Only (s) is valid. There's no turning back..." | Works as expected |
+ask_pull_trigger() | Input 'enter' to Pull the trigger | Function indicating the trigger is pulled is executed | Works as expected |
+ask_pull_trigger() | Input anything other than 'pull' | Error message displays: "Don't extend the suffering. Press only (enter)" | Works as expected |
+ask_play_now_or_quit() | Input 'Yes'(Y) to question if player want to play now | Game goes back to where it started if 'Y' is pressed | Works as expected |
+ask_play_now_or_quit() | Input 'No'(N) to question if player want to play now | Game ends and displays message: "Welcome back! Game ends..." | Works as expected |
+ask_play_now_or_quit() | Input anything other than 'Yes'(Y) or 'No'(N) | Error message displays: "Only the provided options are valid. Choose one of them." | Works as expected |
+ask_play_again_or_quit() | Input 'Yes'(Y) to question if player want to play again | Game starts/continues or exits based on the input | Works as expected |
+ask_play_again_or_quit() | Input 'No'(N)  to question if player want to play again | Game ends and displays message: "Nuff action for today, huh. See you next time! Game ends..." | Works as expected |
+ask_play_again_or_quit() | Input anything other than 'Y' or 'N' | Error message displays: "Only the provided options are valid. Choose one of them." | Works as expected |
 
 
 &nbsp;
