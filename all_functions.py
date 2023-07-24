@@ -177,9 +177,9 @@ def get_story(character_choice):
     )
 
 
-def get_difficulty_level_for_victim():
+def get_difficulty_level():
     """
-    Ask the victim for the difficulty level they want to play on, based on
+    Ask the player for the difficulty level they want to play on, based on their role and
     their self-perceived guilt.
     If 'Not so guilty', return 1.
     If 'Somewhat guilty', return 2.
@@ -187,15 +187,24 @@ def get_difficulty_level_for_victim():
     """
     time.sleep(2)
     injection()
-
-    slow_print(
-        "\nYou've been injected with truth serum and you're incapable " +
-        "\nof lying. Just how guilty are you? Choose the appropriate " +
-        "\ndifficulty level for this round of Russian Roulette...\n" +
-        "\n"
-    )
-
     time.sleep(1)
+
+    character_choice = get_character_choice()
+
+    if character_choice == 'v':
+        slow_print(
+            "\nYou've been injected with truth serum and you're incapable " +
+            "\nof lying. Just how guilty are you? Choose the appropriate " +
+            "\ndifficulty level for this round of Russian Roulette...\n" +
+            "\n"
+        )
+    elif character_choice == 'a':
+        slow_print(
+            "\nYou have injected a truth serum into the victim and no lies " +
+            "\nshould now be told. How guilty do you think he is? Choose the " +
+            "\nappropriate difficulty level for this round of " +
+            "\nRussian Roulette...\n"
+        )
 
     cprint("\n" + divider_dash, 'white', end='')
     cprint(
@@ -221,52 +230,6 @@ def get_difficulty_level_for_victim():
         "\nOnly the provided options are valid. Choose one of them.\n"
     )
         
-    return int(guilt_level)
-    
-
-def get_difficulty_level_for_assassin():
-    """
-    Ask the assassin for the difficulty level they want to play on, based on
-    their perception of the victim's guilt.
-    If 'Not so guilty', return 1.
-    If 'Somewhat guilty', return 2.
-    If 'Pretty guilty', return 3.
-    """
-    
-    time.sleep(2)
-    injection()
-
-    slow_print(
-    "\nYou have injected a truth serum into the victim and no lies " +
-    "\nshould now be told. How guilty do you think he is? Choose the " +
-    "\nappropriate difficulty level for this round of " +
-    "\nRussian Roulette...\n"
-    )
-
-    cprint("\n" + divider_dash, 'white', end='')
-    cprint(
-        "\nKind of Not Guilty - Level Easy, has One bullet in the cylinder. " +
-        "\nPress (1)\n", 'yellow', end=''
-    )
-
-    cprint("\n" + divider_dash, 'white', end='')
-    cprint(
-        "\nSomewhat Guilty - Level Medium, has Two bullets in the cylinder. " +
-        "\nPress (2)\n", 'green', end=''
-    )
-
-    cprint("\n" + divider_dash, 'white', end='')
-    cprint(
-        "\nPretty Guilty - Level Hard, has Three bullets in the cylinder. " +
-        "\nPress (3)\n", 'red'
-    )
-
-    guilt_level = validate_input(
-        "",
-        ['1', '2', '3'],
-        "\nOnly the provided options are valid. Choose one of them.\n"
-    )
-
     return int(guilt_level)
 
 
