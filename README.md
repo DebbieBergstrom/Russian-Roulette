@@ -64,12 +64,6 @@ Press the button to start the game and test your fate. In this game, you first c
 
 ![flowchart](/docs/screenshots/lucid_chart_PP3_russian_roulette.png)
 
-&nbsp;
-
----
-## **Data model**
-The app did not use a data model at this stage of development.
-
 
 &nbsp;
 
@@ -77,6 +71,8 @@ The app did not use a data model at this stage of development.
 ## **Technologies used**
 ### **Language**
 - <b>Python 3</b>: primary programming language for the project
+- <b>HTML</b>: for basic structure
+- <b>CSS</b>: for visual styling of background
 
 
 ### **Programs used**
@@ -93,17 +89,43 @@ The app did not use a data model at this stage of development.
 ---
 ## **Features**
 ### **Existing features**
-The <b>Russian Roulette Game</b> application currently offers the following features:
 
-- <b>Character choice:</b> Users can choose to be the victim or the assassin.
+The **Russian Roulette Game** application currently offers the following features:
 
-### **Future ideas**
-Expanded features Options: Provide more storylines or story options to allow users to select and engage with different narrative paths.
+- **Character choice:** Users can choose to be the victim or the assassin.
 
-- <b>Personalization:</b> Offer the option for users to name their player character.
-- <b>Enhanced Story Interactions:</b> Develop interactive elements within the storylines, allowing users to make choices that have more significant impacts on the narrative.
-- <b>Improved Validation and Error Handling:</b> Refine the validation and error handling mechanisms to provide more informative and user-friendly error messages in case of incorrect inputs or invalid data.
-- <b>Save data:</b> for example to store scores
+- **Game Rules:** Users have access to the game rules, helping newcomers to quickly understand the gameplay mechanics.
+
+- **Difficulty levels:** The game allows users to select a difficulty level (easy, medium, hard), affecting the number of bullets loaded into the revolver.
+
+- **Interactive Gameplay:** The game engages users with prompts and feedback based on their choices.
+
+- **ASCII Art Visuals:** The game uses colored ASCII art to enhance the storytelling and to display the results of each round.
+
+- **Random Outcomes:** Every game session is unique due to the randomized position of bullets in the revolver.
+
+- **Game Result Messages:** Upon game conclusion, users are presented with a fun ASCII art message indicating whether they have survived or not.
+
+- **Replayability:** The game allows for immediate replay upon conclusion, offering users another chance to test their luck.
+
+&nbsp;
+
+### **Future Ideas**
+The development of **Russian Roulette Game** aims to provide more immersive and personalized experiences to users in the future. Here are some of the potential enhancements and features that may be implemented:
+
+- **Expanded Story Options:** Broaden the narrative by introducing more storylines or story options for users to engage with.
+
+- **Character Personalization:** Offer the option for users to name their victim character, providing a more personalized experience.
+
+- **Contractor Selection:** Allow the assassin to choose from a list of evil contractors they've been hired from, adding a new layer of depth to the game's storyline.
+
+- **Dual Victim Mode:** Introduce a mode where a second victim can play against the assassin, adding another layer of competition and suspense to the game.
+
+- **Enhanced Story Interactions:** Further develop the game's interactive elements, enabling users to make choices that have impacts on the storyline's direction and outcomes.
+
+- **Game Progress Saving:** Implement a feature to store game scores or outcomes, allowing users to track their performance.
+
+- **Sound Effects:** To enhance the immersive experience, sound effects could be added to match different events or outcomes within the game.
 
 &nbsp;
 
