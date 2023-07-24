@@ -85,7 +85,7 @@ The app did not use a data model at this stage of development.
 - [Git](https://git-scm.com/) version control system used for managing and tracking changes to the project's codebase
 - [Github](https://github.com/)  web-based hosting service used for version control and storing the project's code after being pushed from Gitpod
 - [Heroku](https://www.heroku.com/home) cloud platform used for deploying and hosting the project's web application
-- [Pseudoeditor](https://pseudoeditor.com/app/) For making a structured plan of pseudocode before actual coding.
+- [Pseudoeditor](https://pseudoeditor.com/app/) For making a structured plan of pseudocode before actual Python coding.
 
 
 &nbsp;
@@ -140,19 +140,16 @@ All string validations have the <b>`.capitalize()`</b> or <b>`.upper()`</b> func
 &nbsp;
 
 ### Automated Testing
-The <b>PEP8</b> validator was used to validate all Python modules in this project. No errors were found besides warnings on some lines that are too long, which can't be undone or shortened.
+The <b>PEP8</b> validator was used to validate all Python modules in this project. No errors were found.
 
   * [PEP8 - run.py](https://pep8ci.herokuapp.com/#)
     ![run.py file](docs/testing/)
 
 * [PEP8 - converter.py](https://pep8ci.herokuapp.com/#)
-    ![converter.py file](docs/testing)
+    ![all_functions.py file](docs/testing)
 
 * [PEP8 - currency_data.py](https://pep8ci.herokuapp.com/#)
-    ![currency_data file](docs/testing/)
-
-* [PEP8 - text_colors.py](https://pep8ci.herokuapp.com/#)
-    ![text_colors.py file](docs/testing/)
+    ![ascii.py](docs/testing/)
 
 
 &nbsp;
@@ -162,7 +159,7 @@ Family and friends tested my game on their devices no issues were reported.
 
 **TEST** | **ACTION** | **EXPECTATION** | **RESULT** 
 ----------|----------|----------|----------
-Validation of integer inputs for "Y" and "N" questions	| test input of both lower- and uppercase	| both should work as inputs | Works as expected
+Validation of inputs for "Y" and "N" questions	| test input of both lower- and uppercase	| both should work as inputs | Works as expected
 
 
 &nbsp;
@@ -172,7 +169,7 @@ Validation of integer inputs for "Y" and "N" questions	| test input of both lowe
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
-| 1. The first line of the multiline string is not aligned with the rest that gets indented.| TO BE FIXED|
+| 1. The first line of the multiline string is not aligned with the rest that gets indented.| Concatenate string by string wrapped in "" with a "+" at the end and avery new string beginning with "n\"|
 | 2. Validation and error message didn't work on the play_now/play_again inputs.| Fixed by using the correct validate_input function|
 | 3. Validation error message kept being displayed even if prompted key 'enter' was pressed.| Fixed by setting en empty string [''] instead of [enter].|                                                                                                                                                                   
 
@@ -180,7 +177,7 @@ Validation of integer inputs for "Y" and "N" questions	| test input of both lowe
 ### **Unfixed Bugs**
 | **Bug** | **Possible solution** |
 | ----------- | ----------- |
-| 1. Bug to be listed| Solutions to be fixed ||   
+| 1. No bugs of knowledge by the time of deployment| n/a |  
 
 
 &nbsp;
@@ -204,20 +201,24 @@ After following these steps, the app was successfully deployed to Heroku.
 
 ### Here's a collection of sites that were helpful in creating this website:
 
-- [WC3Shools](https://www.w3schools.com/python/ref_func_input.asp) explaining input function
-- [WC3Shools](https://www.w3schools.com/python/python_while_loops.asp) explaining while loops
-- [GeeksforGeeks](https://www.geeksforgeeks.org/clear-screen-python/) explaining clear screen and sleep import
-- [GeeksforGeeks](https://replit.com/talk/learn/The-Slow-Print/44741) explaining delayed printing
+- [WC3Shools](https://www.w3schools.com/python/ref_func_input.asp) Explaining input function
+- [WC3Shools](https://www.w3schools.com/python/python_while_loops.asp) Explaining while loops
+- [GeeksforGeeks](https://www.geeksforgeeks.org/clear-screen-python/) Explaining clear screen and sleep import
+- [GeeksforGeeks](https://replit.com/talk/learn/The-Slow-Print/44741) Explaining delayed printing
 
-- [Youtube](https://www.youtube.com/watch?v=jSv0coMSQgg) first tutorial russian roulette game
-- [Youtube](https://www.youtube.com/watch?v=lJivq450kqQ) second tutorial russian roulette game
-- [Youtube](https://www.youtube.com/watch?v=lqAQN0T_Ues&t=580s) third tutorial russian roulette game
+- [Youtube](https://www.youtube.com/watch?v=jSv0coMSQgg) First tutorial russian roulette game
+- [Youtube](https://www.youtube.com/watch?v=lJivq450kqQ) Second tutorial russian roulette game
+- [Youtube](https://www.youtube.com/watch?v=lqAQN0T_Ues&t=580s) Third tutorial russian roulette game
 
-- [ASCII Art](https://https://www.asciiart.eu/weapons/guns) for pre-made ASCII weapon art
+- [ASCII Art](https://https://www.asciiart.eu/weapons/guns) For pre-made ASCII weapon art
 - [ASCII Textcool](https://textkool.com/en) ASCII text generator
 
+- [PsuedoEditor](https://pseudoeditor.com/app/) To create pseudocode to help structure the app
+- [Termocolor](https://pypi.org/project/termcolor/) To create colored text output
 
 - [ChatGPT](https://openai.com/) To create some of the story content
+
+- Code Institute, Python learning material.
 
 ---
 
@@ -227,6 +228,6 @@ I'd like to give recognition to the individuals who supported me in finishing th
 
 * Thanks to... tbc
 
-* [MENTOR NAME](https://github.com/??????????), my Code Institute Mentor.....tbc
+* [Lauren_Nicole](https://github.com/CluelessBiker), my Code Institute Mentor. I cannot thank her enough for her invaluable guidance and assistance.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
