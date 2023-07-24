@@ -53,7 +53,7 @@
 
 ---
 ## **How to use Russian Roulette Game**
-...........
+Press the button to start the game and test your fate. In this game, you first choose your role as either the assassin or the victim. Then, select the level of difficulty. Based on your choice, a revolver is loaded with 1, 2, or 3 bullets, and the cylinder is spun to randomize the position of the bullets. If you're the victim, you'll be forced to pull the trigger. Your fate hinges on the outcome: if the gun fires, you lose and the assassin prevails. If it doesn't, you survive and the assassin walks away. Navigate through the game by pressing the prompted keys followed by the 'Enter' key. Get ready for a fun game of luck and chance!
 
 
 &nbsp;
