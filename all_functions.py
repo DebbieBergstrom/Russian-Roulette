@@ -153,10 +153,11 @@ def get_story(character_choice):
         ("\nCaught in the cruel grips of a notorious assassin for a debt " +
          "\nyou could never pay off, you are given a chilling choice: your " +
          "\nlife or a game. A game so simple, yet so deadly it's been " +
-         "\nfeared for centuries - Russian Roulette.\nIn the eerie silence " +
-         "\nof the room, your heart pounds as you reach for the gun. This " +
-         "\nmight be your only chance to reclaim your freedom, or it might " +
-         "\nbe your end. The answer lies in the hands of fate." +
+         "\nfeared for centuries - Russian Roulette." +
+         "\nIn the eerie silence of the room, your heart pounds as you " +
+         "\nreach for the gun. This might be your only chance to " +
+         "\nreclaim your freedom, or it might be your end. " +
+         "\n The answer lies in the hands of fate." +
          "\n" +
          "\nIt's time to put bullets in the chambers " +
          "\nand spin the cylinder...\n")
@@ -340,8 +341,9 @@ def get_result_message(character_choice, survival_result):
             message = (
                 "\n" +
                 "\nDude, relax, the gun just clicked. You survived! " +
-                "\nDid you have an angel watching out for " +
-                "\nyou? Freedom is at your feet...\n")
+                "\nYou must've had an angel watching out for " +
+                "\nyou?" +
+                "\nFreedom is at your feet... Off you go!\n")
         else:
             ascii_art = you_died()
             message = (
