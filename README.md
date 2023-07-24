@@ -1,10 +1,10 @@
 # **Russian Roulette Game**
 
-Welcome to 
+"Welcome to our cheerful yet suspenseful Python game, a playful spin on Russian Roulette. Enjoy this text-based adventure, enhanced with colors and ASCII art. As you engage with this thrilling narrative, every round becomes a delightful dance with fate. Join the fun and let's see if you can outwit destiny!"
 
 ![amiresponsive](image url)
 
-*Please have a look at the deployed website ![here.](site url)*
+*Please have a look at the deployed app ![here.](https://russian-roulette-game-f11e249e6274.herokuapp.com/)*
 
 &nbsp;
 
@@ -212,6 +212,7 @@ After following these steps, the app was successfully deployed to Heroku.
 
 - [ASCII Art](https://https://www.asciiart.eu/weapons/guns) For pre-made ASCII weapon art
 - [ASCII Textcool](https://textkool.com/en) ASCII text generator
+- [Wallpaperflare](https://www.wallpaperflare.com/cartridge-revolver-russian-roulette-wallpaper-goipr/download) For free backround image
 
 - [PsuedoEditor](https://pseudoeditor.com/app/) To create pseudocode to help structure the app
 - [Termocolor](https://pypi.org/project/termcolor/) To create colored text output
