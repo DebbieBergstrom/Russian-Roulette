@@ -131,13 +131,15 @@ The development of **Russian Roulette Game** aims to provide more immersive and 
 
 ---
 ## **Validation**
-All string validations have the <b>`.capitalize()`</b> or <b>`.upper()`</b> function to prevent any big or small letter errors.
 
-### **All (Y)es or (N)o question validation:**
-- If used with an IF statement as below code: &nbsp;
+- All string inputs are made case-insensitive with the `.lower()` function. This prevents users from encountering errors due to letter casing.
 
-    `if` "N" `not in` "variable" `and` "Y" `not in` "variable":
-    `print('Please press either "Y" for YES or "N" for NO')`
+- The `validate_input` function is used to maintain input validity at all stages. This function asks for user input until a valid input is provided, ensuring that the program doesn't break due to unexpected inputs. Valid inputs are defined as per the game requirements at each step.
+
+- In case of invalid inputs, an error message is displayed to the user. This message guides the user about the correct format or type of expected input, leading to a smoother user experience.
+
+- The `slow_print` and `slow_input` functions ensure a comfortable pace for users to read the prompts and game descriptions and provide their inputs accordingly. This prevents any rush or confusion while playing the game.
+
 
 &nbsp;
 
