@@ -89,6 +89,7 @@ def play_game():
     Initial introduction message gets displayed for the user
     with ASCII art of a revolver.
     """
+    os.system('clear')
     print(divider)
     welcome_art()
     print(divider)
@@ -110,6 +111,7 @@ def display_rules():
     """
     Displays the rules
     """
+    os.system('clear')
     print(divider)
     cprint("\nRussian Roulette is a deadly game of chance." +
            "\nHere's how it works:", 'cyan', attrs=['bold'])
@@ -145,6 +147,7 @@ def get_story(character_choice):
     """
     Displays the story that's tied to the chosen character.
     """
+    os.system('clear')
     print(divider)
 
     return (
@@ -237,6 +240,7 @@ def ask_spin_cylinder():
     """
     Asks the player to spin the cylinder
     """
+    os.system('clear')
     print(divider)
 
     validate_input(
@@ -250,6 +254,7 @@ def get_spin_story(character_choice):
     """
     Displays the story that's tied to the spinning of the cylinder.
     """
+    os.system('clear')
     slow_print(
         '''
            _   '    '  _         
@@ -258,6 +263,7 @@ def get_spin_story(character_choice):
     '''
     )
     time.sleep(2)
+    os.system('clear')
 
     return (
         # Victim's story when 'S' is pressed
@@ -289,10 +295,12 @@ def get_result_message(character_choice, survival_result):
     Displays the survival/death message that's tied to
     the chosen character.
     """
+    os.system('clear')
     print(divider)
     gun_fires()
     print(divider)
     time.sleep(5)
+    os.system('clear')
 
     if character_choice == 'v':
         if survival_result:
@@ -350,6 +358,7 @@ def ask_play_now_or_quit():
 
     # If no, player gets notified before the game ends
     elif play_now == "n":
+        os.system('clear')
         slow_print("\nWelcome back! Game ends...")
         time.sleep(2)
         sys.exit()
@@ -371,12 +380,14 @@ def ask_play_again_or_quit():
 
     # If yes, player is taken back to play again
     if play_again == "y":
+        os.system('clear')
         slow_print("\nAwesome! Let's test your fate again!")
         time.sleep(2)
         return True
 
     # If no, player gets notified before the game ends
     elif play_again == "n":
+        os.system('clear')
         slow_print(
             "\nNuff action for today, huh. See you next time!\nGame ends...")
         time.sleep(2)
