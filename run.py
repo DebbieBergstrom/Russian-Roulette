@@ -1,15 +1,4 @@
 from termcolor import colored, cprint
-from ascii import (
-    gun_fires,
-    welcome_art,
-    cylinder_spun_victim_message,
-    cylinder_spun_assassin_message,
-    you_died,
-    victim_died,
-    you_survived,
-    victim_survived,
-    injection
-)
 from all_functions import (
     play_game,
     display_rules,
@@ -25,8 +14,7 @@ from all_functions import (
     slow_input,
     validate_input,
     get_spin_story,
-    get_difficulty_level_for_victim,
-    get_difficulty_level_for_assassin
+    get_difficulty_level
 )
 
 
@@ -47,10 +35,7 @@ def main():
         elif character_choice in ["v", "a"]:
             story = get_story(character_choice)
             slow_print(story)
-            if character_choice == 'v':
-                bullets = get_difficulty_level_for_victim()
-            elif character_choice == 'a':
-                bullets = get_difficulty_level_for_assassin()
+            bullets = get_difficulty_level(character_choice)
             ask_spin_cylinder()
             spin_story = get_spin_story(character_choice)
             ask_pull_trigger()

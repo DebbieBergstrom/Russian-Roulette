@@ -163,7 +163,7 @@ def you_survived():
     """
     Displays ASCII art of a message indicating the player has survived.
     """
-    cprint(
+    return colored(
     """
     __  __               _____                  _                ____
     \ \/ /___  __  __   / ___/__  ________   __(_)   _____  ____/ / /
@@ -178,7 +178,7 @@ def victim_survived():
     """
     Displays ASCII art of a message indicating the victim has survived.
     """
-    cprint( 
+    return colored( 
     """
    _____                  _                ____
   / ___/__  ________   __(_)   _____  ____/ / /

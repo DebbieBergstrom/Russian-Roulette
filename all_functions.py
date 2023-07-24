@@ -157,7 +157,7 @@ def get_story(character_choice):
          "\nIn the eerie silence of the room, your heart pounds as you " +
          "\nreach for the gun. This might be your only chance to " +
          "\nreclaim your freedom, or it might be your end. " +
-         "\n The answer lies in the hands of fate." +
+         "\nThe answer lies in the hands of fate." +
          "\n" +
          "\nIt's time to put bullets in the chambers " +
          "\nand spin the cylinder...\n")
@@ -177,7 +177,7 @@ def get_story(character_choice):
     )
 
 
-def get_difficulty_level():
+def get_difficulty_level(character_choice):
     """
     Ask the player for the difficulty level they want to play on, based on their role and
     their self-perceived guilt.
@@ -189,15 +189,13 @@ def get_difficulty_level():
     injection()
     time.sleep(1)
 
-    character_choice = get_character_choice()
-
     if character_choice == 'v':
         slow_print(
             "\nYou've been injected with truth serum and you're incapable " +
             "\nof lying. Just how guilty are you? Choose the appropriate " +
-            "\ndifficulty level for this round of Russian Roulette...\n" +
-            "\n"
+            "\ndifficulty level for this round of Russian Roulette...\n"
         )
+
     elif character_choice == 'a':
         slow_print(
             "\nYou have injected a truth serum into the victim and no lies " +
@@ -300,7 +298,7 @@ def get_result_message(character_choice, survival_result):
 
     if character_choice == 'v':
         if survival_result:
-            you_survived()
+            slow_print(you_survived())
             message = (
                 "\n" +
                 "\nDude, relax, the gun just clicked. You survived! " +
@@ -317,7 +315,7 @@ def get_result_message(character_choice, survival_result):
                 "\nPurgatory awaits!\n")
     else:
         if survival_result:
-            victim_survived()
+            slow_print(victim_survived())
             message = (
                 "\n" +
                 "\nYou were kinda expecting a BOOM, but the gun just " +
