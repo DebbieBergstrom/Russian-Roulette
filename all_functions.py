@@ -50,7 +50,7 @@ def randomize_spin(bullets):
     return random.randint(1, 6) > bullets
 
 
-def slow_print(string, delay=0.01):
+def slow_print(string, delay=0.04):
     """
     Delays string printing for smooth print effect.
     """
@@ -60,7 +60,7 @@ def slow_print(string, delay=0.01):
         time.sleep(delay)
 
 
-def slow_input(string, delay=0.02):
+def slow_input(string, delay=0.03):
     """
     Delays input prompt printing for smooth print effect
     """
@@ -122,7 +122,7 @@ def display_rules():
            "\n- If the gun fires -victim dies and divine judgement prevails." +
            "\n- If the gun doesn't fire -victim lives, the assassin walks away" +
            "\n" +
-           "\nMay fate be in your favor.\n" +
+           "\nMay fate be in your favor." +
            "\n", 'cyan')
     print(divider)
 
@@ -203,6 +203,8 @@ def get_difficulty_level(character_choice):
             "\nappropriate difficulty level for this round of " +
             "\nRussian Roulette...\n"
         )
+    
+    time.sleep(2)
 
     cprint("\n" + divider_dash, 'white', end='')
     cprint(
@@ -298,7 +300,7 @@ def get_result_message(character_choice, survival_result):
 
     if character_choice == 'v':
         if survival_result:
-            slow_print(you_survived())
+            slow_print(you_survived(), delay=0.01)
             message = (
                 "\n" +
                 "\nDude, relax, the gun just clicked. You survived! " +
@@ -315,7 +317,7 @@ def get_result_message(character_choice, survival_result):
                 "\nPurgatory awaits!\n")
     else:
         if survival_result:
-            slow_print(victim_survived())
+            slow_print(victim_survived(), delay=0.01)
             message = (
                 "\n" +
                 "\nYou were kinda expecting a BOOM, but the gun just " +
