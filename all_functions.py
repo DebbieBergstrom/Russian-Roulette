@@ -194,6 +194,8 @@ def get_difficulty_level_for_victim():
         "\n"
     )
 
+    time.sleep(1)
+
     cprint("\n" + divider_dash, 'white', end='')
     cprint(
         "\nKind of Not Guilty - Level Easy, has One bullet in the cylinder. " +
@@ -286,7 +288,7 @@ def get_spin_story(character_choice):
     Displays the story that's tied to the spinning of the cylinder.
     """
     slow_print(
-        '''  
+        '''
            _   '    '  _         
 .  .  .  _) /)//)/)//)(/.  .  .  
            /         _/          
