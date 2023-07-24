@@ -178,7 +178,7 @@ The <b>PEP8</b> validator was used to validate all Python modules in this projec
 
 &nbsp;
 
-### Manuell Testing
+### Manual Testing
 Family and friends tested my game on their devices no issues were reported.
 
 **TEST** | **ACTION** | **EXPECTATION** | **RESULT** 
@@ -257,4 +257,4 @@ I'd like to give recognition to the ones who have supported me in finishing this
 
 * Code Institute and their helpfull staff, especially within our great Slack community. 
 
-<p align="right">- [Back To the Top](#content)</p>
+<p align="right">[Back to top](#)</p>
