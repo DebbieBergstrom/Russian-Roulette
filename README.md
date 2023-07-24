@@ -249,10 +249,12 @@ After following these steps, the app was successfully deployed to Heroku.
 
 ###  **Acknowledgments**
 
-I'd like to give recognition to the individuals who supported me in finishing this project:
-
-* Thanks to... tbc
+I'd like to give recognition to the ones who have supported me in finishing this project:
 
 * [Lauren_Nicole](https://github.com/CluelessBiker), my Code Institute Mentor. I cannot thank her enough for her invaluable guidance and assistance.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+* [Sandra B](https://github.com/SandraBergstrom) and [Kim B](https://github.com/KimBergstroem), my dear siblings who are with me on this coding journey and who are both great critics and support pillars.
+
+* Code Institute and their helpfull staff, especially within our great Slack community. 
+
+<p align="right">- [Back To the Top](#content)</p>
