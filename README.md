@@ -4,7 +4,7 @@ Welcome to our cheerful yet suspenseful Python game, a playful spin on Russian R
 
 ![amiresponsive](/docs/images/amiresponsive_pp3.png)
 
-*Please have a look at the deployed app ![here.](../Russian-Roulette/docs/images/amiresponsive_pp3.png)*
+*Please have a look at the deployed app ![here.](https://russian-roulette-game-f11e249e6274.herokuapp.com/)*
 
 &nbsp;
 
@@ -34,7 +34,7 @@ Welcome to our cheerful yet suspenseful Python game, a playful spin on Russian R
 
 ---
 
-## **UX **
+## **UX**
 ### **Site Purpose**
 
 To engage users in a thrilling game of virtual Russian Roulette. Users can play, testing their luck and surviving the suspenseful rounds.
@@ -100,6 +100,10 @@ Moreover, a header has been incorporated stating "You just entered a deadly game
 
 Complementary colors like red and yellow are used strategically in the heading and the button that says "Test your fate".
 
+![Color Scheme](/docs/images/color_scheme_pp3.png)
+
+---
+
 ## **Program flow**
 
 FLowchart made in LucidChart displays all of the steps of the game from beginning to end. 
@@ -112,9 +116,9 @@ FLowchart made in LucidChart displays all of the steps of the game from beginnin
 ## **Technologies used**
 ### **Language**
 - <b>Python 3</b>: Primary programming language for the project.
-- <b>HTML5</b>: basic structure from CodeInstitute Template. Code was added to change styling for this app.
-- <b>CSS</b>: basic structure from CodeInstitute Template. Code was added for styling of background, heading and button.
-- <b>Javascript:</b> from CodeInstitute Template. 
+- <b>HTML5</b>: basic structure from Code Institute Template. Code was added to change styling for this app.
+- <b>CSS</b>: basic structure from Code Institute Template. Code was added for styling of background, heading and button.
+- <b>Javascript:</b> from Code Institute Template. 
 
 
 ### **Programs used**
