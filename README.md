@@ -1,10 +1,10 @@
 # **Russian Roulette Game**
 
-"Welcome to our cheerful yet suspenseful Python game, a playful spin on Russian Roulette. Enjoy this text-based adventure, enhanced with colors and ASCII art. As you engage with this thrilling narrative, every round becomes a delightful dance with fate. Join the fun and let's see if you can outwit destiny!"
+Welcome to our cheerful yet suspenseful Python game, a playful spin on Russian Roulette. Enjoy this text-based adventure, enhanced with colors and ASCII art. As you engage with this thrilling narrative, every round becomes a delightful dance with fate. Join the fun and let's see if you can outwit destiny!
 
 ![amiresponsive](image url)
 
-*Please have a look at the deployed app ![here.](https://russian-roulette-game-f11e249e6274.herokuapp.com/)*
+*Please have a look at the deployed app ![here.](https://russian-roulette-game-f11e249e6274.herokuapp.com)*
 
 &nbsp;
 
@@ -62,7 +62,7 @@ Press the button to start the game and test your fate. In this game, you first c
 ## **Program flow**
 
 
-![flowchart](/docs/screenshots/lucid_chart_PP3_russian_roulette.png)
+![flowchart](/docs/images/lucid_chart_PP3_russian_roulette.png)
 
 
 &nbsp;
