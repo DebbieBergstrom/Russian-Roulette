@@ -140,19 +140,19 @@ FLowchart made in LucidChart displays all of the steps of the game from beginnin
 
 The **Russian Roulette Game** application currently offers the following features (press the dropdown to see image):
 
-<details><summary>Landing page - Welcoming the user to the game: </summary>
+<details><summary>Landing page - Welcoming the user to the game.</summary>
 <img src="/docs/images/landing_page.png"></details>
 
-<details><summary>Introduction to the game - followed by choice to be the victim or the assassin or see rules: </summary>
+<details><summary>Introduction to the game - followed by choice to be the victim or the assassin or see rules.</summary>
 <img src="/docs/images/intro_choose_character.png"></details>
 
-<details><summary>Story based on character choice displays - The storyline will from now on be different for 'victim' and 'assassin': </summary>
+<details><summary>Story based on character choice displays - The storyline will from now on be different for 'victim' and 'assassin'.</summary>
 <img src="/docs/images/story_for_character.png"></details>
 
-<details><summary>Game Rules -Users can choose to see the game rules, helping newcomers to quickly understand the gameplay mechanics: </summary>
+<details><summary>Game Rules -Users can choose to see the game rules, helping newcomers to quickly understand the gameplay mechanics.</summary>
 <img src="/docs/images/see_rules.png"></details>
 
-<details><summary>Difficulty level - allows users to select a difficulty level (easy, medium, hard), affecting the number of bullets loaded into the revolver: </summary>
+<details><summary>Difficulty level - allows users to select a difficulty level (easy, medium, hard), affecting the number of bullets loaded into the revolver.</summary>
 <img src="/docs/images/level_for_character.png"></details>
 
 <details><summary>Interactive Gameplay - engages users with prompts and feedback based on their choices.</summary>
@@ -220,19 +220,46 @@ The development of **Russian Roulette Game** aims to provide more immersive and 
 **First Time Visitors**
 | User Story | How this was achieved | Screenshot |
 |------------|-----------------------|------------|
-| As a first-time visitor, I want to understand the purpose of the game and the stakes at hand | The application displays a welcoming message explaining the game's premise and stakes | <details><summary>Landing Page: </summary><img src="/docs/images/landing_page.png"></details><details><summary>Introduction display:</summary><img src="/docs/images/intro_choose_character.png"> |
+| As a first-time visitor, I want to understand the purpose of the game and the stakes at hand | The application displays a welcoming message explaining the game's premise and stakes | <details><summary>Landing Page: </summary><img src="/docs/images/landing_page.png"></details><details><summary>Introduction display:</summary><img src="/docs/images/intro_choose_character.png"><details> |
 | As a first-time visitor, I want to choose my role in the game (victim or assassin) | The game prompts the user to choose their role after the introduction | <details><summary>Choose Role: </summary><img src="/docs/images/intro_choose_character.png"></details> |
 | As a first-time visitor, I want to understand the game rules | The game provides an option to view the rules before starting the game | <details><summary>Rules displayed: </summary><img src="/docs/images/see_rules.png"></details> |
 | As a first-time visitor, I want to select the difficulty level (easy, medium, hard) | The game prompts the user to choose the difficulty level before after character story has begun | <details><summary>Choose difficulty Level:</summary><img src="/docs/images/level_for_character.png"></details> |
-| As a first-time visitor, I want to appreciate the storytelling with ASCII Art Visuals| ASCII Art is used throughout the game to enhance the storytelling | <details><summary>ASCII Art Examples:</summary>
+| As a first-time visitor, I want to appreciate the storytelling with ASCII Art Visuals| ASCII Art is used throughout the game to enhance the storytelling | 
+<details><summary>Guns Loaded</summary>
 <img src="/docs/images/guns_loaded.png">
+</details>
+
+<details><summary>Spinning</summary>
 <img src="/docs/images/spinning.png">
+</details>
+
+<details><summary>Cylinder Spun</summary>
 <img src="/docs/images/cylinder_spun.png">
+</details>
+
+<details><summary>Invalid Trigger Pull</summary>
 <img src="/docs/images/pull_trigger_invalid.png">
+</details>
+
+<details><summary>Boom!</summary>
 <img src="/docs/images/boom.png">
-</details> |
-| As a first-time visitor, I want to know the result of my playing | The game provides a unique ASCII Art message indicating the outcome of the game | <details><summary>Example of outcomes: </summary><img src="/docs/images/survived_for_character.png"><img src="/docs/images/death_for_character.png"></details> |
-| As a first-time visitor, I want to be asked if I want to play again after I'm finished or have the choice to quit | The game prompts the user to play again or not after the game ends. Restarts game if (y), displays ending message if (n) | <details><summary>Prompts Play again or not and displays end message:</summary><img src="/docs/images/survived_for_character.png"><img src="/docs/images/game_ends.png"></details> |
+</details>
+ |
+| As a first-time visitor, I want to know the result of my playing | The game provides a unique ASCII Art message indicating the outcome of the game | 
+<details><summary>Example Victim Survived</summary>
+<img src="/docs/images/survived_for_character.png">
+</details>
+
+<details><summary>Example Victim Died</summary>
+<img src="/docs/images/death_for_character.png">
+</details>
+ |
+| As a first-time visitor, I want to be asked if I want to play again after I'm finished or have the choice to quit | The game prompts the user to play again or not after the game ends. Restarts game if (y), displays ending message if (n) | <details><summary>Prompts to play again or not</summary>
+<img src="/docs/images/survived_for_character.png">
+</details>
+<details><summary>Displays end message</summary>
+<img src="/docs/images/game_ends.png">
+</details>|
 
 &nbsp;
 
@@ -240,9 +267,21 @@ The development of **Russian Roulette Game** aims to provide more immersive and 
 | User Story | How this was achieved | Screenshot |
 |------------|-----------------------|------------|
 | As a returning visitor, I want to play the game again, attempting a different role | The game allows users to select a different role when replaying the game | <details><summary>Screenshot of result:</summary><img src="/docs/images/intro_choose_character.png"></details> |
-| As a returning visitor, I want to play the game again, attempting a different difficulty level | The game allows users to select a different difficulty level when replaying the game | <details><summary>Screenshot of result:</summary><img src="/docs/images/level_for_character.png"></details> |
-| As a returning visitor, I want to explore different outcomes and various game results based on my choices and luck  | The game outcomes are determined by the randomized position of bullets, and throughout the game unique ASCII Art messages are displayed for different outcomes, enhancing the narrative exploration | <details><summary>Screenshot of result:</summary><img src="/docs/images/survived_for_character.png"><img src="/docs/images/death_for_character.png"></details> |
-| As a returning visitor, I want to be asked if I want to play again after I'm finished or have the choice to quit | The game prompts the user to play again or not after the game ends | <details><summary>Prompts Play again or not and displays end message:</summary><img src="/docs/images/survived_for_character.png"><img src="/docs/images/game_ends.png"></details> |
+| As a returning visitor, I want to play the game again, attempting a different difficulty level | The game allows users to select a different difficulty level when replaying the game | <details><summary>Example</summary><img src="/docs/images/level_for_character.png"></details> |
+| As a returning visitor, I want to explore different outcomes and various game results based on my choices and luck | The game outcomes are determined by the randomized position of bullets, and throughout the game unique ASCII Art messages are displayed for different outcomes, enhancing the narrative exploration | <details><summary>Example Victim Survived</summary>
+<img src="/docs/images/survived_for_character.png">
+</details>
+
+<details><summary>Example Victim Died</summary>
+<img src="/docs/images/death_for_character.png">
+</details>
+ |
+| As a returning visitor, I want to be asked if I want to play again after I'm finished or have the choice to quit | The game prompts the user to play again or not after the game ends | <details><summary>Prompts to play again or not</summary>
+<img src="/docs/images/survived_for_character.png">
+</details>
+<details><summary>Displays end message</summary>
+<img src="/docs/images/game_ends.png">
+</details>|
 
 &nbsp;
 
