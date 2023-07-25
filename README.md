@@ -138,23 +138,23 @@ FLowchart made in LucidChart displays all of the steps of the game from beginnin
 
 The **Russian Roulette Game** application currently offers the following features:
 
-- <details><summary>Landing page - Welcoming the user to the game: </summary>![Landing Page](/docs/images/landing_page.png)</details>
+<details><summary>Landing page - Welcoming the user to the game: </summary>![Landing Page](/docs/images/landing_page.png)</details>
 
-- <details><summary>Introduction to the game - followed by choice to be the victim or the assassin or see rules: </summary>![Introduction](/docs/images/intro_choose_character.png)</details>
+<details><summary>Introduction to the game - followed by choice to be the victim or the assassin or see rules: </summary>![Introduction](/docs/images/intro_choose_character.png)</details>
 
-- <details><summary>Story based on character choice displays - The storyline will from now on be different for 'victim' and 'assassin': </summary>![Initial Story](/docs/images/story_for_character.png)</details>
+<details><summary>Story based on character choice displays - The storyline will from now on be different for 'victim' and 'assassin': </summary>![Initial Story](/docs/images/story_for_character.png)</details>
 
-- <details><summary>Game Rules -Users can choose to see the game rules, helping newcomers to quickly understand the gameplay mechanics: </summary>![Game Rules](/docs/images/see_rules.png)</details>
+<details><summary>Game Rules -Users can choose to see the game rules, helping newcomers to quickly understand the gameplay mechanics: </summary>![Game Rules](/docs/images/see_rules.png)</details>
 
-- <details><summary>Difficulty level - allows users to select a difficulty level (easy, medium, hard), affecting the number of bullets loaded into the revolver: </summary>![Choose Difficulty Level](/docs/images/level_for_character.png)</details>
+<details><summary>Difficulty level - allows users to select a difficulty level (easy, medium, hard), affecting the number of bullets loaded into the revolver: </summary>![Choose Difficulty Level](/docs/images/level_for_character.png)</details>
 
-- <details><summary>Interactive Gameplay - engages users with prompts and feedback based on their choices. </summary>![Gun's loaded, Spin the Cylinder!](/docs/images/guns_loaded.png)![Spinning](/docs/images/spinning.png)![Story when Cylinder Spun](/docs/images/cylinder_spun.png)![Pull the Trigger + error message](/docs/images/pull_trigger_invalid.png)</details>
+<details><summary>Interactive Gameplay - engages users with prompts and feedback based on their choices. </summary>![Gun's loaded, Spin the Cylinder!](/docs/images/guns_loaded.png)![Spinning](/docs/images/spinning.png)![Story when Cylinder Spun](/docs/images/cylinder_spun.png)![Pull the Trigger + error message](/docs/images/pull_trigger_invalid.png)</details>
 
-- <details><summary>ASCII Art Visuals - The game uses colored ASCII art to enhance the storytelling and to display the results of each round: </summary>![Boom! When gun fires](/docs/images/boom.png)</details>
+<details><summary>ASCII Art Visuals - The game uses colored ASCII art to enhance the storytelling and to display the results of each round: </summary>![Boom! When gun fires](/docs/images/boom.png)</details>
 
-- <details><summary>Random Outcomes displays different Game Result Messages - Every game session is unique due to the randomized position of bullets in the revolver. Upon game conclusion, users are presented with a fun ASCII art message indicating whether they have survived or not: </summary>![Survived Message](/docs/images/survived_for_character.png)![Death Message](/docs/images/death_for_character.png)</details>
+<details><summary>Random Outcomes displays different Game Result Messages - Every game session is unique due to the randomized position of bullets in the revolver. Upon game conclusion, users are presented with a fun ASCII art message indicating whether they have survived or not: </summary>![Survived Message](/docs/images/survived_for_character.png)![Death Message](/docs/images/death_for_character.png)</details>
 
-- <details><summary>Replayability - The game allows for immediate replay upon conclusion, offering users another chance to test their luck. Otherwise a goodbye message displays  telling the player the game ends: </summary>![Game ends](/docs/images/game_ends.png)</details>
+<details><summary>Replayability - The game allows for immediate replay upon conclusion, offering users another chance to test their luck. Otherwise a goodbye message displays  telling the player the game ends: </summary>![Game ends](/docs/images/game_ends.png)</details>
 
 &nbsp;
 
@@ -231,10 +231,10 @@ Family and friends tested my game application on their devices and no issues wer
 
 **TEST** | **ACTION** | **EXPECTATION** | **RESULT**
 ----------|----------|----------|----------|
-get_character_choice() | Input 'victim', 'assassin', or 'rules' | Game character is selected or rules are displayed | All three works as expected |
-get_character_choice() | Input invalid choice (anything other than 'victim', 'assassin', or 'rules') | Error message displays: "Only the provided options are valid. Choose one of them." | Works as expected |
+get_character_choice() | Input (v) for 'victim', (a) for 'assassin', or (r) for 'rules' | Game character is selected or rules are displayed | All three works as expected |
+get_character_choice() | Input invalid choice (anything other than (v), (a), or (r)) | Error message displays: "Only the provided options are valid. Choose one of them." | Works as expected |
 get_difficulty_level() | Input difficulty level ('low'(1), 'medium'(2), 'high'(3)) | Difficulty level is set according to input | All three works as expected |
-get_difficulty_level() | Input invalid difficulty level (anything other than 'low'(1), 'medium'(2), 'high'(3)) | Error message displays: "Only the provided options are valid. Choose one of them." | Works as expected |
+get_difficulty_level() | Input invalid difficulty level (anything other than (1), (2), (3)) | Error message displays: "Only the provided options are valid. Choose one of them." | Works as expected |
 ask_spin_cylinder() | Input (s) to 'spin' | Function indicating cylinder is spinning is executed | Works as expected |
 ask_spin_cylinder() | Input anything other than (s) to 'spin' | Error message displays: "Only (s) is valid. There's no turning back..." | Works as expected |
 ask_pull_trigger() | Input 'enter' to Pull the trigger | Function indicating the trigger is pulled is executed | Works as expected |
