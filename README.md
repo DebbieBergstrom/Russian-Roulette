@@ -70,7 +70,7 @@ To expand the game by implementing more fun features, please see the list of Fut
 - As a first-time visitor, I want to choose my role in the game (victim or assassin) to add a personal touch to the gameplay.
 - As a first-time visitor, I want to understand the game rules to navigate the game easily.
 - As a first-time visitor, I want to select the difficulty level (easy, medium, hard), according to my preference.
-- As a first-time visitor, I want to appreciate the ASCII Art Visuals that add a unique touch to the gameplay.
+- As a first-time visitor, I want to appreciate the storytelling with ASCII Art Visuals
 - As a first-time visitor, I want to know the result of my playing.
 - As a first-time visitor, I want to be asked if I want to play again after I'm finished or have the choice to quit.
 
@@ -78,8 +78,7 @@ To expand the game by implementing more fun features, please see the list of Fut
 #### Returning Visitor Goals
 - As a returning visitor, I want to play the game again, attempting a different role.
 - As a returning visitor, I want to play the game again, attempting a different difficulty level.
-- As a returning visitor, I want to experience different outcomes based on my choices and luck.
-- As a returning visitor, I want to explore various game results to experience the full range of the game's narrative.
+- As a returning visitor, I want to explore different outcomes and various game results based on my choices and luck
 - As a returning visitor, I want to be asked if I want to play again after I'm finished or have the choice to quit.
 
 &nbsp;
@@ -218,16 +217,32 @@ The development of **Russian Roulette Game** aims to provide more immersive and 
 **First Time Visitors**
 | User Story | How this was achieved | Screenshot |
 |------------|-----------------------|------------|
-| As a first-time visitor, I want to | The application displays a  | <details><summary>Screenshot of result:</summary><img src="/docs/images/">
+**First Time Visitors**
+| User Story | How this was achieved | Screenshot |
+|------------|-----------------------|------------|
+| As a first-time visitor, I want to understand the purpose of the game and the stakes at hand | The application displays a welcoming message explaining the game's premise and stakes | <details><summary>Landing Page: </summary><img src="/docs/images/landing_page.png"></details><details><summary>Introduction display:</summary><img src="/docs/images/intro_choose_character.png"> |
+| As a first-time visitor, I want to choose my role in the game (victim or assassin) | The game prompts the user to choose their role after the introduction | <details><summary>Choose Role: </summary><img src="/docs/images/intro_choose_character.png"></details> |
+| As a first-time visitor, I want to understand the game rules | The game provides an option to view the rules before starting the game | <details><summary>Rules displayed: </summary><img src="/docs/images/see_rules.png"></details> |
+| As a first-time visitor, I want to select the difficulty level (easy, medium, hard) | The game prompts the user to choose the difficulty level before after character story has begun | <details><summary>Choose difficulty Level:</summary><img src="/docs/images/level_for_character.png"></details> |
+| As a first-time visitor, I want to appreciate the storytelling with ASCII Art Visuals| ASCII Art is used throughout the game to enhance the storytelling | <details><summary>ASCII Art Examples:</summary>
+<img src="/docs/images/guns_loaded.png">
+<img src="/docs/images/spinning.png">
+<img src="/docs/images/cylinder_spun.png">
+<img src="/docs/images/pull_trigger_invalid.png">
+<img src="/docs/images/boom.png">
 </details> |
+| As a first-time visitor, I want to know the result of my playing | The game provides a unique ASCII Art message indicating the outcome of the game | <details><summary>Example of outcomes: </summary><img src="/docs/images/survived_for_character.png"><img src="/docs/images/death_for_character.png"></details> |
+| As a first-time visitor, I want to be asked if I want to play again after I'm finished or have the choice to quit | The game prompts the user to play again or not after the game ends. Restarts game if (y), displays ending message if (n) | <details><summary>Prompts Play again or not and displays end message:</summary><img src="/docs/images/survived_for_character.png"><img src="/docs/images/game_ends.png"></details> |
 
 &nbsp;
 
 **Returning Visitors**
 | User Story | How this was achieved | Screenshot |
 |------------|-----------------------|------------|
-| As a returning visitor, I want to  | Returning visitors can | <details><summary>Screenshot of result:</summary><img src="/docs/images/"> |
-
+| As a returning visitor, I want to play the game again, attempting a different role | The game allows users to select a different role when replaying the game | <details><summary>Screenshot of result:</summary><img src="/docs/images/intro_choose_character.png"></details> |
+| As a returning visitor, I want to play the game again, attempting a different difficulty level | The game allows users to select a different difficulty level when replaying the game | <details><summary>Screenshot of result:</summary><img src="/docs/images/level_for_character.png"></details> |
+| As a returning visitor, I want to explore different outcomes and various game results based on my choices and luck  | The game outcomes are determined by the randomized position of bullets, and throughout the game unique ASCII Art messages are displayed for different outcomes, enhancing the narrative exploration | <details><summary>Screenshot of result:</summary><img src="/docs/images/survived_for_character.png"><img src="/docs/images/death_for_character.png"></details> |
+| As a returning visitor, I want to be asked if I want to play again after I'm finished or have the choice to quit | The game prompts the user to play again or not after the game ends | <details><summary>Prompts Play again or not and displays end message:</summary><img src="/docs/images/survived_for_character.png"><img src="/docs/images/game_ends.png"></details> |
 
 &nbsp;
 
