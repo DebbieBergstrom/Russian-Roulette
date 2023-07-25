@@ -17,7 +17,7 @@ Welcome to our cheerful yet suspenseful Python game, a playful spin on Russian R
 ---
 
 ## **CONTENT**
-
+- [UX](#ux)
 - [User Stories](#user-stories)
 - [How to use Russian Roulette Game](#how-to-use-russian-roulette-game)
 - [Program Flow](#program-flow)
@@ -33,6 +33,36 @@ Welcome to our cheerful yet suspenseful Python game, a playful spin on Russian R
 &nbsp;
 
 ---
+
+## **UX **
+### **Site Purpose**
+
+To engage users in a thrilling game of virtual Russian Roulette. Users can play, testing their luck and surviving the suspenseful rounds.
+
+### **Site Goal**
+
+To offer a simple, entertaining and suspenseful game experience through a terminal-based text game.
+
+### **Audience**
+
+Individuals who enjoy text-based games, probability, suspense, and testing their luck.
+
+### **Communication**
+
+The game communicates its intent through print statements, prompting the user to choose options and make their game decisions. Different outcomes are highlighted in different colours to increase user engagement and improve readability.
+
+### **Current User Goals**
+
+To keep the user engaged with the game by offering a captivating and suspenseful experience. The ability to restart the game provides the user with opportunities for endless fun and varying outcomes.
+
+### **New User Goals**
+
+To learn the mechanics of the game, enjoy the suspense, and challenge their luck in the game.
+
+### **Future Goals**
+
+To expand the game by implementing more fun features, please see the list of Future features further down. 
+
 
 ## **User Stories**
 #### **First time users**
@@ -59,9 +89,20 @@ Press the button to start the game and test your fate. In this game, you first c
 &nbsp;
 
 ---
+
+## Design
+
+The design of the game incorporates various elements to enhance the user experience and game atmosphere. Inside the terminal, colorful ASCII art has been utilized to provide visual feedback and further immerse the user in the gameplay.
+
+In addition to the terminal, the design also extends to the surrounding environment with a background featuring a close-up of a revolver with an open cylinder. With o monochromatic palette of black, grey, and white to represent the serious and suspenseful theme of the game, the image helps to set the mood and theme of the game, in contrast to the previous plain white background.
+
+Moreover, a header has been incorporated stating "You just entered a deadly game of Russian Roulette", serving as an intriguing introduction that instantly catches the user's attention.
+
+Complementary colors like red and yellow are used strategically in the heading and the button that says "Test your fate".
+
 ## **Program flow**
 
-
+FLowchart made in LucidChart displays all of the steps of the game from beginning to end. 
 ![flowchart](/docs/images/lucid_chart_PP3_russian_roulette.png)
 
 
@@ -70,9 +111,10 @@ Press the button to start the game and test your fate. In this game, you first c
 ---
 ## **Technologies used**
 ### **Language**
-- <b>Python 3</b>: primary programming language for the project
-- <b>HTML</b>: for basic structure
-- <b>CSS</b>: for visual styling of background
+- <b>Python 3</b>: Primary programming language for the project.
+- <b>HTML5</b>: basic structure from CodeInstitute Template. Code was added to change styling for this app.
+- <b>CSS</b>: basic structure from CodeInstitute Template. Code was added for styling of background, heading and button.
+- <b>Javascript:</b> from CodeInstitute Template. 
 
 
 ### **Programs used**
