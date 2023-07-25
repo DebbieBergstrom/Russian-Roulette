@@ -138,23 +138,39 @@ FLowchart made in LucidChart displays all of the steps of the game from beginnin
 
 The **Russian Roulette Game** application currently offers the following features:
 
-<details><summary>Landing page - Welcoming the user to the game: </summary>![Landing Page](/docs/images/landing_page.png)</details>
+<details><summary>Landing page - Welcoming the user to the game: </summary>
+<img src="/docs/images/landing_page.png"></details>
 
-<details><summary>Introduction to the game - followed by choice to be the victim or the assassin or see rules: </summary>![Introduction](/docs/images/intro_choose_character.png)</details>
+<details><summary>Introduction to the game - followed by choice to be the victim or the assassin or see rules: </summary>
+<img src="/docs/images/intro_choose_character.png"></details>
 
-<details><summary>Story based on character choice displays - The storyline will from now on be different for 'victim' and 'assassin': </summary>![Initial Story](/docs/images/story_for_character.png)</details>
+<details><summary>Story based on character choice displays - The storyline will from now on be different for 'victim' and 'assassin': </summary>
+<img src="/docs/images/story_for_character.png"></details>
 
-<details><summary>Game Rules -Users can choose to see the game rules, helping newcomers to quickly understand the gameplay mechanics: </summary>![Game Rules](/docs/images/see_rules.png)</details>
+<details><summary>Game Rules -Users can choose to see the game rules, helping newcomers to quickly understand the gameplay mechanics: </summary>
+<img src="/docs/images/see_rules.png"></details>
 
-<details><summary>Difficulty level - allows users to select a difficulty level (easy, medium, hard), affecting the number of bullets loaded into the revolver: </summary>![Choose Difficulty Level](/docs/images/level_for_character.png)</details>
+<details><summary>Difficulty level - allows users to select a difficulty level (easy, medium, hard), affecting the number of bullets loaded into the revolver: </summary>
+<img src="/docs/images/level_for_character.png"></details>
 
-<details><summary>Interactive Gameplay - engages users with prompts and feedback based on their choices. </summary>![Gun's loaded, Spin the Cylinder!](/docs/images/guns_loaded.png)![Spinning](/docs/images/spinning.png)![Story when Cylinder Spun](/docs/images/cylinder_spun.png)![Pull the Trigger + error message](/docs/images/pull_trigger_invalid.png)</details>
+<details><summary>Interactive Gameplay - engages users with prompts and feedback based on their choices.</summary>
+<img src="/docs/images/guns_loaded.png">
+<img src="/docs/images/spinning.png">
+<img src="/docs/images/cylinder_spun.png">
+<img src="/docs/images/pull_trigger_invalid.png">
+</details>
 
-<details><summary>ASCII Art Visuals - The game uses colored ASCII art to enhance the storytelling and to display the results of each round: </summary>![Boom! When gun fires](/docs/images/boom.png)</details>
+<details><summary>ASCII Art Visuals - The game uses colored ASCII art to enhance the storytelling and to display the results of each round: </summary>
+<img src="/docs/images/boom.png"></details>
 
-<details><summary>Random Outcomes displays different Game Result Messages - Every game session is unique due to the randomized position of bullets in the revolver. Upon game conclusion, users are presented with a fun ASCII art message indicating whether they have survived or not: </summary>![Survived Message](/docs/images/survived_for_character.png)![Death Message](/docs/images/death_for_character.png)</details>
+<details><summary>Random Outcomes displays different Game Result Messages - Every game session is unique due to the randomized position of bullets in the revolver. Upon game conclusion, users are presented with a fun ASCII art message indicating whether they have survived or not:</summary>
+<img src="/docs/images/survived_for_character.png">
+<img src="/docs/images/death_for_character.png">
+</details>
 
-<details><summary>Replayability - The game allows for immediate replay upon conclusion, offering users another chance to test their luck. Otherwise a goodbye message displays  telling the player the game ends: </summary>![Game ends](/docs/images/game_ends.png)</details>
+<details><summary>Replayability - The game allows for immediate replay upon conclusion, offering users another chance to test their luck. Otherwise a goodbye message displays telling the player the game ends:</summary>
+<img src="/docs/images/game_ends.png">
+</details>
 
 &nbsp;
 
@@ -199,14 +215,15 @@ The development of **Russian Roulette Game** aims to provide more immersive and 
 **First Time Visitors**
 | User Story | How this was achieved | Screenshot |
 |------------|-----------------------|------------|
-| As a first-time visitor, I want to | The application displays a  | <details><summary>Screenshot of result:</summary>![Result](docs/testing)</details> |
+| As a first-time visitor, I want to | The application displays a  | <details><summary>Screenshot of result:</summary><img src="/docs/images/">
+</details> |
 
 &nbsp;
 
 **Returning Visitors**
 | User Story | How this was achieved | Screenshot |
 |------------|-----------------------|------------|
-| As a returning visitor, I want to  | Returning visitors can | <details><summary>Screenshot of result:</summary>![Result](docs/testing/)</details> |
+| As a returning visitor, I want to  | Returning visitors can | <details><summary>Screenshot of result:</summary><img src="/docs/images/"> |
 
 
 &nbsp;
@@ -214,15 +231,23 @@ The development of **Russian Roulette Game** aims to provide more immersive and 
 ### Automated Testing
 The * [PEP8 CI Python Linter](https://pep8ci.herokuapp.com/#) validator was used to validate all Python modules in this project.
 
-* The run.py file was validated without any errors
-    ![run.py file](/docs/testing/py_linter_runpy.png)
+* The `run.py` file was validated without any errors:
 
-* The all_functions.py file was validated without any errors except for some neccessary white spaces needed within the 'spinning' asccii art string. 
-    ![all_functions.py file](/docs/testing/py_linter_all_functions.png)
+    <details><summary>See the validation results</summary>
+    <img src="/docs/testing/py_linter_runpy.png">
+    </details>
 
-* The ascii.py file was validated with errors only relating to neccessary white spaces and indentation needed within all the asccii art strings. 
-    ![ascii.py](/docs/testing/py_linter_ascii.png)
+* The `all_functions.py` file was validated without any errors except for some necessary white spaces needed within the 'spinning' ASCII art string:
 
+    <details><summary>See the validation results</summary>
+    <img src="/docs/testing/py_linter_all_functions.png">
+    </details>
+
+* The `ascii.py` file was validated with errors only relating to necessary white spaces and indentation needed within all the ASCII art strings:
+
+    <details><summary>See the validation results</summary>
+    <img src="/docs/testing/py_linter_ascii.png">
+    </details>
 
 &nbsp;
 
