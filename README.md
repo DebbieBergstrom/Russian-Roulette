@@ -4,7 +4,7 @@ Welcome to our cheerful yet suspenseful Python game, a playful spin on Russian R
 
 ![amiresponsive](/docs/images/amiresponsive_pp3.png)
 
-*Please have a look at the deployed app ![here.](https://russian-roulette-game-f11e249e6274.herokuapp.com/)*
+Please have a look at the deployed app ![here.](https://russian-roulette-game-f11e249e6274.herokuapp.com/) 
 
 &nbsp;
 
