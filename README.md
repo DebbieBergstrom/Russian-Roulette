@@ -4,7 +4,7 @@ Welcome to our cheerful yet suspenseful Python game, a playful spin on Russian R
 
 ![amiresponsive](/docs/images/amiresponsive_pp3.png)
 
-Please have a look at the deployed app ![here.](https://russian-roulette-game-f11e249e6274.herokuapp.com/) 
+Please have a look at the deployed app through the link under the 'About' section in the top right corner of this repository. 
 
 &nbsp;
 
@@ -20,15 +20,17 @@ Please have a look at the deployed app ![here.](https://russian-roulette-game-f1
 - [UX](#ux)
 - [User Stories](#user-stories)
 - [How to use Russian Roulette Game](#how-to-use-russian-roulette-game)
+- [Design](#design)
 - [Program Flow](#program-flow)
-- [Data Model](#data-model)
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Validation](#validation)
 - [Testing](#testing)
 - [Bugs](#bugs)
 - [Deployment](#deployment)
+- [Media](#media)
 - [Credits](#credits)
+- [Acknowledgments](#acknowledgments)
 
 &nbsp;
 
@@ -63,6 +65,7 @@ To learn the mechanics of the game, enjoy the suspense, and challenge their luck
 
 To expand the game by implementing more fun features, please see the list of Future features further down. 
 
+---
 
 ## **User Stories**
 #### First Time Visitor Goals
@@ -84,6 +87,7 @@ To expand the game by implementing more fun features, please see the list of Fut
 &nbsp;
 
 ---
+
 ## **How to use Russian Roulette Game**
 Press the button to start the game and test your fate. In this game, you first choose your role as either the assassin or the victim. Then, select the level of difficulty. Based on your choice, a revolver is loaded with 1, 2, or 3 bullets, and the cylinder is spun to randomize the position of the bullets. If you're the victim, you'll be forced to pull the trigger. Your fate hinges on the outcome: if the gun fires, you lose and the assassin prevails. If it doesn't, you survive and the assassin walks away. Navigate through the game by pressing the prompted keys followed by the 'Enter' key. Get ready for a fun game of luck and chance!
 
@@ -104,9 +108,9 @@ Complementary colors like red and yellow are used strategically in the heading a
 
 ![Color Scheme](/docs/images/color_scheme_pp3.png)
 
-A Favicon with a yellow bullet was made to be displayed in the application's tab in the web browser next to the title. This makes it look more professional and it has better visibility among many open tabs or saved bookmarks, which adds to better user experience. 
-![Bullet Favicon](/docs/images/favicon_bullet_pp3.png)
+&nbsp;
 
+![Bullet Favicon](/docs/images/favicon_bullet_pp3.png) A Favicon with a yellow bullet was made to be displayed in the application's tab in the web browser next to the title. This makes it look more professional and it has better visibility among many open tabs or saved bookmarks, which adds to better user experience. 
 
 ---
 
@@ -119,6 +123,7 @@ FLowchart made in LucidChart displays all of the steps of the game from beginnin
 &nbsp;
 
 ---
+
 ## **Technologies used**
 ### **Language**
 - <b>Python 3</b>: Primary programming language for the project.
@@ -129,7 +134,7 @@ FLowchart made in LucidChart displays all of the steps of the game from beginnin
 
 ### **Programs used**
 - [LucidChart](https://lucidchart/) to visually map out the structure and flowchart of the app.
-- [Gitpd](https://gitpod.io/) cloud-based IDE used for version control and writing code
+- [Gitpod](https://gitpod.io/) cloud-based IDE used for version control and writing code
 - [Git](https://git-scm.com/) version control system used for managing and tracking changes to the project's codebase
 - [Github](https://github.com/)  web-based hosting service used for version control and storing the project's code after being pushed from Gitpod
 - [Heroku](https://www.heroku.com/home) cloud platform used for deploying and hosting the project's web application
@@ -139,6 +144,7 @@ FLowchart made in LucidChart displays all of the steps of the game from beginnin
 &nbsp;
 
 ---
+
 ## **Features**
 ### **Existing features**
 
@@ -200,6 +206,7 @@ The development of **Russian Roulette Game** aims to provide more immersive and 
 &nbsp;
 
 ---
+
 ## **Validation**
 
 - All string inputs are made case-insensitive with the `.lower()` function. This prevents users from encountering errors due to letter casing.
@@ -214,6 +221,7 @@ The development of **Russian Roulette Game** aims to provide more immersive and 
 &nbsp;
 
 ---
+
 ## **Testing**
 
 ### **Testing User Stories**
@@ -235,7 +243,7 @@ The development of **Russian Roulette Game** aims to provide more immersive and 
 **Returning Visitors**
 | User Story | How this was achieved | Screenshot |
 |------------|-----------------------|------------|
-| As a returning visitor, I want to play the game again, attempting a different role | The game allows users to select a different role when replaying the game | <details><summary>Screenshot of result:</summary><img src="/docs/images/intro_choose_character.png"></details> |
+| As a returning visitor, I want to play the game again, attempting a different role | The game allows users to select a different role when replaying the game | <details><summary>Character choice</summary><img src="/docs/images/intro_choose_character.png"></details> |
 | As a returning visitor, I want to play the game again, attempting a different difficulty level | The game allows users to select a different difficulty level when replaying the game | <details><summary>Example</summary><img src="/docs/images/level_for_character.png"></details> |
 | As a returning visitor, I want to explore different outcomes and various game results based on my choices and luck | The game outcomes are determined by the randomized position of bullets, and throughout the game unique ASCII Art messages are displayed for different outcomes, enhancing the narrative exploration | <details><summary>Example Victim Survived</summary>
 <img src="/docs/images/survived_for_character.png"></details><details><summary>Example Victim Died</summary><img src="/docs/images/death_for_character.png"></details> |
@@ -290,6 +298,7 @@ ask_play_again_or_quit() | Input anything other than 'Y' or 'N' | Error message 
 &nbsp;
 
 ---
+
 ## **Bugs**
 
 | **Bug** | **Fix** |
@@ -308,6 +317,7 @@ ask_play_again_or_quit() | Input anything other than 'Y' or 'N' | Error message 
 &nbsp;
 
 ---
+
 ## **Deployment**
 To deploy this project, these steps was followed:
 
@@ -317,7 +327,18 @@ To deploy this project, these steps was followed:
 4. Connect your Heroku app to the repository by linking it to your forked copy of the repository.
 5. Click on the "Deploy" button in the Heroku dashboard.
 
-After following these steps, the app was successfully deployed to Heroku. 
+After following these steps, the app is successfully deployed to Heroku. 
+
+&nbsp;
+
+---
+
+## **Media**
+- [Wallpaperflare](https://www.wallpaperflare.com/cartridge-revolver-russian-roulette-wallpaper-goipr/download) for free background image
+- [Favicon Generator](https://favicon.io/) to create the bullet favicon in the browser tab
+- [ASCII Art](https://https://www.asciiart.eu/weapons/guns) For pre-made ASCII weapon art
+- [ASCII Textcool](https://textkool.com/en) ASCII text generator
+
 
 &nbsp;
 
@@ -335,10 +356,6 @@ After following these steps, the app was successfully deployed to Heroku.
 - [Youtube](https://www.youtube.com/watch?v=lJivq450kqQ) Second tutorial russian roulette game
 - [Youtube](https://www.youtube.com/watch?v=lqAQN0T_Ues&t=580s) Third tutorial russian roulette game
 
-- [ASCII Art](https://https://www.asciiart.eu/weapons/guns) For pre-made ASCII weapon art
-- [ASCII Textcool](https://textkool.com/en) ASCII text generator
-- [Wallpaperflare](https://www.wallpaperflare.com/cartridge-revolver-russian-roulette-wallpaper-goipr/download) For free backround image
-
 - [PsuedoEditor](https://pseudoeditor.com/app/) To create pseudocode to help structure the app
 - [Termocolor](https://pypi.org/project/termcolor/) To create colored text output
 
@@ -348,7 +365,7 @@ After following these steps, the app was successfully deployed to Heroku.
 
 ---
 
-###  **Acknowledgments**
+##  **Acknowledgments**
 
 I'd like to give recognition to the ones who have supported me in finishing this project:
 
