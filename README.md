@@ -2,7 +2,7 @@
 
 Welcome to our cheerful yet suspenseful Python game, a playful spin on Russian Roulette. Enjoy this text-based adventure, enhanced with colors and ASCII art. As you engage with this thrilling narrative, every round becomes a delightful dance with fate. Join the fun and let's see if you can outwit destiny!
 
-![amiresponsive](image url)
+![amiresponsive](/docs/images/amiresponsive_pp3.png)
 
 *Please have a look at the deployed app ![here.](../Russian-Roulette/docs/images/amiresponsive_pp3.png)*
 
@@ -92,21 +92,23 @@ Press the button to start the game and test your fate. In this game, you first c
 
 The **Russian Roulette Game** application currently offers the following features:
 
-- **Character choice:** Users can choose to be the victim or the assassin.
+- <details><summary>Landing page - Welcoming the user to the game: </summary>![Landing Page](/docs/images/landing_page.png)</details>
 
-- **Game Rules:** Users have access to the game rules, helping newcomers to quickly understand the gameplay mechanics.
+- <details><summary>Introduction to the game - followed by choice to be the victim or the assassin or see rules: </summary>![Introduction](/docs/images/intro_choose_character.png)</details>
 
-- **Difficulty levels:** The game allows users to select a difficulty level (easy, medium, hard), affecting the number of bullets loaded into the revolver.
+- <details><summary>Story based on character choice displays - The storyline will from now on be different for 'victim' and 'assassin': </summary>![Initial Story](/docs/images/story_for_character.png)</details>
 
-- **Interactive Gameplay:** The game engages users with prompts and feedback based on their choices.
+- <details><summary>Game Rules -Users can choose to see the game rules, helping newcomers to quickly understand the gameplay mechanics: </summary>![Game Rules](/docs/images/see_rules.png)</details>
 
-- **ASCII Art Visuals:** The game uses colored ASCII art to enhance the storytelling and to display the results of each round.
+- <details><summary>Difficulty level - allows users to select a difficulty level (easy, medium, hard), affecting the number of bullets loaded into the revolver: </summary>![Choose Difficulty Level](/docs/images/level_for_character.png)</details>
 
-- **Random Outcomes:** Every game session is unique due to the randomized position of bullets in the revolver.
+- <details><summary>Interactive Gameplay - engages users with prompts and feedback based on their choices. </summary>![Gun's loaded, Spin the Cylinder!](/docs/images/guns_loaded.png)![Spinning](/docs/images/spinning.png)![Story when Cylinder Spun](/docs/images/cylinder_spun.png)![Pull the Trigger + error message](/docs/images/pull_trigger_invalid.png)</details>
 
-- **Game Result Messages:** Upon game conclusion, users are presented with a fun ASCII art message indicating whether they have survived or not.
+- <details><summary>ASCII Art Visuals - The game uses colored ASCII art to enhance the storytelling and to display the results of each round: </summary>![Boom! When gun fires](/docs/images/boom.png)</details>
 
-- **Replayability:** The game allows for immediate replay upon conclusion, offering users another chance to test their luck.
+- <details><summary>Random Outcomes displays different Game Result Messages - Every game session is unique due to the randomized position of bullets in the revolver. Upon game conclusion, users are presented with a fun ASCII art message indicating whether they have survived or not: </summary>![Survived Message](/docs/images/survived_for_character.png)![Death Message](/docs/images/death_for_character.png)</details>
+
+- <details><summary>Replayability - The game allows for immediate replay upon conclusion, offering users another chance to test their luck. Otherwise a goodbye message displays  telling the player the game ends: </summary>![Game ends](/docs/images/game_ends.png)</details>
 
 &nbsp;
 
@@ -167,13 +169,13 @@ The development of **Russian Roulette Game** aims to provide more immersive and 
 The * [PEP8 CI Python Linter](https://pep8ci.herokuapp.com/#) validator was used to validate all Python modules in this project.
 
 * The run.py file was validated without any errors
-    ![run.py file](../Russian-Roulette/docs/testing/py_linter_runpy.png)
+    ![run.py file](/docs/testing/py_linter_runpy.png)
 
 * The all_functions.py file was validated without any errors except for some neccessary white spaces needed within the 'spinning' asccii art string. 
-    ![all_functions.py file](../Russian-Roulette/docs/testing/py_linter_all_functions.png)
+    ![all_functions.py file](/docs/testing/py_linter_all_functions.png)
 
 * The ascii.py file was validated with errors only relating to neccessary white spaces and indentation needed within all the asccii art strings. 
-    ![ascii.py](../Russian-Roulette/docs/testing/py_linter_ascii.png)
+    ![ascii.py](/docs/testing/py_linter_ascii.png)
 
 
 &nbsp;
