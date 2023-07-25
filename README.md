@@ -65,19 +65,22 @@ To expand the game by implementing more fun features, please see the list of Fut
 
 
 ## **User Stories**
-#### **First time users**
-1. _As a first-time user, I want to 
-2. _As a first-time user, I want to 
-3. _As a first-time user, I want to 
-4. _As a first-time user, I want to 
-5. _As a first-time user, I want to 
-6. _As a first-time user, 
+#### First Time Visitor Goals
+- As a first-time visitor, I want to understand the purpose of the game and the stakes at hand.
+- As a first-time visitor, I want to choose my role in the game (victim or assassin) to add a personal touch to the gameplay.
+- As a first-time visitor, I want to understand the game rules to navigate the game easily.
+- As a first-time visitor, I want to select the difficulty level (easy, medium, hard), according to my preference.
+- As a first-time visitor, I want to appreciate the ASCII Art Visuals that add a unique touch to the gameplay.
+- As a first-time visitor, I want to know the result of my playing.
+- As a first-time visitor, I want to be asked if I want to play again after I'm finished or have the choice to quit.
 
-#### **Returning users**
-7. _As a returning user, I want to
-8. _As a returning user, I want to
-10. _As a returning user, I want to
-11. _As a returning user, I want to 
+
+#### Returning Visitor Goals
+- As a returning visitor, I want to play the game again, attempting a different role.
+- As a returning visitor, I want to play the game again, attempting a different difficulty level.
+- As a returning visitor, I want to experience different outcomes based on my choices and luck.
+- As a returning visitor, I want to explore various game results to experience the full range of the game's narrative.
+- As a returning visitor, I want to be asked if I want to play again after I'm finished or have the choice to quit.
 
 &nbsp;
 
@@ -136,7 +139,7 @@ FLowchart made in LucidChart displays all of the steps of the game from beginnin
 ## **Features**
 ### **Existing features**
 
-The **Russian Roulette Game** application currently offers the following features:
+The **Russian Roulette Game** application currently offers the following features (press the dropdown to see image):
 
 <details><summary>Landing page - Welcoming the user to the game: </summary>
 <img src="/docs/images/landing_page.png"></details>
@@ -229,7 +232,7 @@ The development of **Russian Roulette Game** aims to provide more immersive and 
 &nbsp;
 
 ### Automated Testing
-The * [PEP8 CI Python Linter](https://pep8ci.herokuapp.com/#) validator was used to validate all Python modules in this project.
+The * [PEP8 CI Python Linter](https://pep8ci.herokuapp.com/#) validator was used to validate all Python modules in this project. Press the dropdown to see image.
 
 * The `run.py` file was validated without any errors:
 
