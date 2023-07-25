@@ -4,7 +4,7 @@ Welcome to our cheerful yet suspenseful Python game, a playful spin on Russian R
 
 ![amiresponsive](image url)
 
-*Please have a look at the deployed app ![here.](https://russian-roulette-game-f11e249e6274.herokuapp.com)*
+*Please have a look at the deployed app ![here.](../Russian-Roulette/docs/images/amiresponsive_pp3.png)*
 
 &nbsp;
 
@@ -164,22 +164,22 @@ The development of **Russian Roulette Game** aims to provide more immersive and 
 &nbsp;
 
 ### Automated Testing
-The <b>PEP8</b> validator was used to validate all Python modules in this project. No errors were found.
+The * [PEP8 CI Python Linter](https://pep8ci.herokuapp.com/#) validator was used to validate all Python modules in this project.
 
-  * [PEP8 - run.py](https://pep8ci.herokuapp.com/#)
-    ![run.py file](docs/testing/)
+* The run.py file was validated without any errors
+    ![run.py file](../Russian-Roulette/docs/testing/py_linter_runpy.png)
 
-* [PEP8 - converter.py](https://pep8ci.herokuapp.com/#)
-    ![all_functions.py file](docs/testing)
+* The all_functions.py file was validated without any errors except for some neccessary white spaces needed within the 'spinning' asccii art string. 
+    ![all_functions.py file](../Russian-Roulette/docs/testing/py_linter_all_functions.png)
 
-* [PEP8 - currency_data.py](https://pep8ci.herokuapp.com/#)
-    ![ascii.py](docs/testing/)
+* The ascii.py file was validated with errors only relating to neccessary white spaces and indentation needed within all the asccii art strings. 
+    ![ascii.py](../Russian-Roulette/docs/testing/py_linter_ascii.png)
 
 
 &nbsp;
 
 ### Manual Testing
-Family and friends tested my game on their devices no issues were reported.
+Family and friends tested my game application on their devices and no issues were reported.
 
 **TEST** | **ACTION** | **EXPECTATION** | **RESULT**
 ----------|----------|----------|----------|
@@ -214,7 +214,7 @@ ask_play_again_or_quit() | Input anything other than 'Y' or 'N' | Error message 
 ### **Unfixed Bugs**
 | **Bug** | **Possible solution** |
 | ----------- | ----------- |
-| 1. No bugs of knowledge by the time of deployment| n/a |  
+| 1. When player has chosen difficulty level and the viewport of the screen in the terminal gets 'cleared' (previously content isn't visible any longer in case player dosn't scroll up), if player scroll up you see that the previously displayed ascii 'syringe' is cut in half | I deleted all the "os.system('clear')" out of the code, but when the game runs it gets all run from top to bottom without any effect of cleared viewport window and it does not look good and takes away some of the suspense that is built up through choices made through the story. Therefore this is left unfixed since it's not meant to scroll up anyway and the 'clear' function adds more to the game than if its not executed. |  
 
 
 &nbsp;
@@ -270,4 +270,4 @@ I'd like to give recognition to the ones who have supported me in finishing this
 
 * Code Institute and their helpfull staff, especially within our great Slack community. 
 
-<p align="right">[Back to top](#)</p>
+[Back to top](#)
